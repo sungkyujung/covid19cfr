@@ -1,0 +1,7 @@
+# Published
+
+Sandra E Safo, Jeongyoun Ahn, Yongho Jeon and Sungkyu Jung (2018). "Sparse Generalized Eigenvalue Problem for Canonical Correlation Analysis With Application to Integrative Analysis of Methylationand Gene Expression Data" accepted for publication in *Biometrics* [(link)](https://doi.org/10.1111/biom.12886) [(arXiv)](https://arxiv.org/abs/1611.01066)
+
+# WorkinProgress
+
+David Groisser, Sungkyu Jung and Armin Schwartzman. "Uniqueness questions in a scaling-rotation geometry on the space of symmetric positive-definite matrices"  [(arXiv)](https://arxiv.org/abs/1702.03237)

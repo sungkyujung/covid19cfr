@@ -1,0 +1,16 @@
+---
+title: "PhD Students"
+output: html_document
+---
+
+## Current students
+ 
+- Xing Gao
+
+## Past students 
+
+- Brian Rooks. Ph.D. 2018. "Statistical analysis of Random symmetric positive-definite matrices via eigen-decomposition". Postdoctoral researcher, University of Rochester.
+
+- Sungwon Lee. Ph.D. 2016. "Integrative analysis of variation structure in high-dimensional multi-block data". Mathematical statistician, CDER, FDA.
+
+- Byungwon Kim. Ph.D. 2018. "Small sphere distributions and related topics in directional statistics".  Postdoctoral researcher, University of Pittsburgh.
