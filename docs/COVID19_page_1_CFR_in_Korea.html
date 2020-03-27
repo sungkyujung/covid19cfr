@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>COVID-19 Case Fatality Rate: South Korea</title>
+
+<script src="site_libs/jquery-1.12.4/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<script src="site_libs/htmlwidgets-1.5.1/htmlwidgets.js"></script>
+<link href="site_libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet" />
+<script src="site_libs/datatables-binding-0.12/datatables.js"></script>
+<link href="site_libs/dt-core-1.10.20/css/jquery.dataTables.min.css" rel="stylesheet" />
+<link href="site_libs/dt-core-1.10.20/css/jquery.dataTables.extra.css" rel="stylesheet" />
+<script src="site_libs/dt-core-1.10.20/js/jquery.dataTables.min.js"></script>
+<link href="site_libs/crosstalk-1.0.0/css/crosstalk.css" rel="stylesheet" />
+<script src="site_libs/crosstalk-1.0.0/js/crosstalk.min.js"></script>
+<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h2 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h3 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h4 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h5 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h6 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">COVID-19</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="COVID19_page_1_CFR_in_Korea.html">
+    <span class="fa fa-flag  fa-1x"></span>
+     
+    Korea
+  </a>
+</li>
+<li>
+  <a href="COVID19_page_3_CFR_Global.html">
+    <span class="fa fa-globe fa-1x"></span>
+     
+    Global
+  </a>
+</li>
+<li>
+  <a href="COVID19_page_2_CFR_Methods.html">
+    <span class="fa fa-pencil-square fa-1x"></span>
+     
+    Methods
+  </a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">COVID-19 Case Fatality Rate: South Korea</h1>
+<h4 class="date">3/27/2020</h4>
+
+</div>
+
+
+<div id="trend-of-daily-gross-case-fatality-rate" class="section level2">
+<h2>Trend of Daily Gross Case Fatality Rate</h2>
+<p><img src="COVID19_page_1_CFR_in_Korea_files/figure-html/figure_1_CFR-1.png" width="1152" /></p>
+</div>
+<div id="latest-age-group-wise-case-fatality-rates" class="section level2">
+<h2>Latest Age Group-wise Case Fatality Rates</h2>
+<p><img src="COVID19_page_1_CFR_in_Korea_files/figure-html/figure_2_agegroup_ci-1.png" width="1152" /></p>
+<div id="htmlwidget-8b0c8516a0118846e427" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-8b0c8516a0118846e427">{"x":{"filter":"none","data":[["Gross","0s","10s","20s","30s","40s","50s","60s","70s","80s"],[2.12,0,0,0,0.16,0.12,0.86,2.69,9.43,20.69],[0.17,0,0,0,0.16,0.12,0.27,0.58,1.4,2.27],[1.79,0,0,0,-0.15,-0.12,0.33,1.55,6.69,16.23],[2.45,0,0,0,0.47,0.36,1.39,3.82,12.17,25.14]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Fatality Rate (%)<\/th>\n      <th>SE (%)<\/th>\n      <th>95% confidence lower bound (%)<\/th>\n      <th>95% confidence upper bound (%)<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":10,"columnDefs":[{"className":"dt-right","targets":[1,2,3,4]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div id="age-group-wise-data-table" class="section level2">
+<h2>Age Group-wise data table</h2>
+<div id="cumulative-number-of-confirmed-patients" class="section level4">
+<h4>1. Cumulative number of confirmed patients</h4>
+<div id="htmlwidget-2e2e5fd2e4635f7a4a15" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-2e2e5fd2e4635f7a4a15">{"x":{"filter":"none","data":[["26","25","24","23","22","21","20","19","18","17","16","15","14","13","12","11","10","9","8","7","6","5","4","3","2","1"],["2020-03-27","2020-03-26","2020-03-25","2020-03-24","2020-03-23","2020-03-22","2020-03-21","2020-03-20","2020-03-19","2020-03-18","2020-03-17","2020-03-16","2020-03-15","2020-03-14","2020-03-13","2020-03-12","2020-03-11","2020-03-10","2020-03-09","2020-03-08","2020-03-07","2020-03-06","2020-03-05","2020-03-04","2020-03-03","2020-03-02"],[9332,9241,9137,9037,8961,8897,8799,8652,8565,8413,8320,8236,8162,8086,7979,7869,7755,7513,7382,7134,6777,6284,5766,5328,4812,4212],[108,106,105,105,103,101,99,97,91,87,86,85,83,81,77,76,75,67,66,58,52,45,38,34,34,32],[496,488,475,468,460,460,457,452,444,438,436,432,427,424,421,412,405,393,381,360,327,292,257,233,204,169],[2532,2508,2473,2438,2417,2396,2380,2365,2358,2342,2330,2313,2301,2287,2274,2261,2238,2213,2190,2133,2038,1877,1727,1575,1417,1235],[960,955,943,921,917,909,900,893,886,873,856,849,842,833,823,812,804,789,779,760,727,693,659,631,578,506],[1256,1252,1246,1234,1228,1221,1203,1193,1181,1171,1164,1147,1141,1133,1117,1101,1082,1030,1005,975,941,889,847,790,713,633],[1752,1738,1724,1716,1702,1691,1672,1656,1642,1615,1602,1585,1568,1551,1523,1495,1472,1416,1391,1349,1287,1217,1127,1051,952,834],[1170,1162,1154,1146,1139,1132,1118,1099,1080,1059,1033,1024,1012,999,985,972,960,929,916,878,830,763,699,646,597,530],[630,616,611,608,599,595,589,568,562,542,539,531,525,515,506,497,483,454,438,409,384,340,288,260,224,192],[428,416,406,401,396,392,381,329,321,286,274,270,263,263,253,243,236,222,216,212,191,168,124,108,93,81]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Date<\/th>\n      <th>Total<\/th>\n      <th>0s<\/th>\n      <th>10s<\/th>\n      <th>20s<\/th>\n      <th>30s<\/th>\n      <th>40s<\/th>\n      <th>50s<\/th>\n      <th>60s<\/th>\n      <th>70s<\/th>\n      <th>80s<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":5,"columnDefs":[{"className":"dt-right","targets":[2,3,4,5,6,7,8,9,10,11]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false,"lengthMenu":[5,10,25,50,100]}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div id="cumulative-number-of-deceased-patients" class="section level4">
+<h4>2. Cumulative number of deceased patients</h4>
+<div id="htmlwidget-08e66c7d862e623843d0" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-08e66c7d862e623843d0">{"x":{"filter":"none","data":[["26","25","24","23","22","21","20","19","18","17","16","15","14","13","12","11","10","9","8","7","6","5","4","3","2","1"],["2020-03-27","2020-03-26","2020-03-25","2020-03-24","2020-03-23","2020-03-22","2020-03-21","2020-03-20","2020-03-19","2020-03-18","2020-03-17","2020-03-16","2020-03-15","2020-03-14","2020-03-13","2020-03-12","2020-03-11","2020-03-10","2020-03-09","2020-03-08","2020-03-07","2020-03-06","2020-03-05","2020-03-04","2020-03-03","2020-03-02"],[139,131,126,120,111,104,102,94,91,84,81,75,75,72,67,66,60,54,51,50,44,42,35,32,28,22],[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],[10,10,10,8,7,7,7,7,7,6,6,6,6,6,6,6,6,5,5,5,5,5,5,5,5,5],[21,20,20,20,18,17,17,17,17,16,16,14,14,14,14,14,14,13,12,11,11,11,8,7,7,6],[41,41,39,38,38,37,37,35,34,29,29,28,28,27,24,24,21,19,18,18,14,14,13,12,9,6],[65,58,55,52,46,41,39,33,31,31,28,25,25,23,21,20,17,15,14,14,12,10,7,6,5,3]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Date<\/th>\n      <th>Total<\/th>\n      <th>0s<\/th>\n      <th>10s<\/th>\n      <th>20s<\/th>\n      <th>30s<\/th>\n      <th>40s<\/th>\n      <th>50s<\/th>\n      <th>60s<\/th>\n      <th>70s<\/th>\n      <th>80s<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":5,"columnDefs":[{"className":"dt-right","targets":[2,3,4,5,6,7,8,9,10,11]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false,"lengthMenu":[5,10,25,50,100]}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div id="cumulative-number-of-recovered-patients" class="section level4">
+<h4>3. Cumulative number of recovered patients</h4>
+<div id="htmlwidget-ce281484cc67ce134ffe" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-ce281484cc67ce134ffe">{"x":{"filter":"none","data":[["26","25","24","23","22","21","20","19","18","17","16","15","14","13","12","11","10","9","8","7","6","5","4","3","2","1"],["2020-03-27","2020-03-26","2020-03-25","2020-03-24","2020-03-23","2020-03-22","2020-03-21","2020-03-20","2020-03-19","2020-03-18","2020-03-17","2020-03-16","2020-03-15","2020-03-14","2020-03-13","2020-03-12","2020-03-11","2020-03-10","2020-03-09","2020-03-08","2020-03-07","2020-03-06","2020-03-05","2020-03-04","2020-03-03","2020-03-02"],[4529,4144,3731,3508,3166,2908,2612,2233,1947,1540,1400,1136,834,713,509,332,289,248,167,131,117,108,88,41,34,31],[52,48,43,41,36,33,29,25,21,16,14,12,8,7,5,3,3,2,1,1,1,1,1,0,0,0],[241,219,194,182,163,150,136,117,101,80,73,60,44,37,27,17,15,13,9,7,6,5,4,2,1,1],[1229,1125,1010,946,854,783,707,610,536,429,392,319,235,202,145,96,83,73,49,39,35,32,26,12,10,9],[466,428,385,357,324,297,267,230,201,160,144,117,86,74,53,34,30,26,18,14,13,12,10,5,4,4],[609,561,509,479,434,399,357,308,268,214,196,158,117,100,71,47,40,34,23,18,16,15,13,6,5,5],[850,779,704,666,601,553,496,427,373,296,270,219,160,137,97,63,55,47,31,25,22,21,17,8,7,6],[568,521,471,445,402,370,332,284,246,194,174,141,103,88,63,41,36,31,21,16,14,13,11,5,4,4],[306,276,249,236,212,195,175,147,128,99,91,73,54,45,32,21,18,15,10,7,7,6,4,2,2,1],[208,187,166,156,140,128,113,85,73,52,46,37,27,23,16,10,9,7,5,4,3,3,2,1,1,1]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Date<\/th>\n      <th>Total<\/th>\n      <th>0s<\/th>\n      <th>10s<\/th>\n      <th>20s<\/th>\n      <th>30s<\/th>\n      <th>40s<\/th>\n      <th>50s<\/th>\n      <th>60s<\/th>\n      <th>70s<\/th>\n      <th>80s<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":5,"columnDefs":[{"className":"dt-right","targets":[2,3,4,5,6,7,8,9,10,11]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false,"lengthMenu":[5,10,25,50,100]}},"evals":[],"jsHooks":[]}</script>
+<div id="data-source" class="section level5">
+<h5><em>Data source</em></h5>
+<ul>
+<li><h6 id="daily-updated-age-grouped-data-can-be-downloaded-from-the-below-link"><em>Daily updated age grouped data can be downloaded from the below link:</em></h6>
+<h6 id="httpswww.kaggle.comkimjihoocoronavirusdatasettimeage.csv"><a href="https://www.kaggle.com/kimjihoo/coronavirusdataset#TimeAge.csv" class="uri">https://www.kaggle.com/kimjihoo/coronavirusdataset#TimeAge.csv</a></h6></li>
+<li><h6 id="if-not-properly-updated-the-data-can-be-manually-recorded-from-the-daily-report-published-by-kcdc"><em>If not properly updated, the data can be manually recorded from the daily report published by KCDC</em></h6>
+<h6 id="httpncov.mohw.go.krtcmboardlist.dobrdid3brdgubundatagubunncvcontseqcontseqboard_id"><a href="http://ncov.mohw.go.kr/tcmBoardList.do?brdId=3&amp;brdGubun=&amp;dataGubun=&amp;ncvContSeq=&amp;contSeq=&amp;board_id=" class="uri">http://ncov.mohw.go.kr/tcmBoardList.do?brdId=3&amp;brdGubun=&amp;dataGubun=&amp;ncvContSeq=&amp;contSeq=&amp;board_id=</a></h6></li>
+</ul>
+</div>
+</div>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
