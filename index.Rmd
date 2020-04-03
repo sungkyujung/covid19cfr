@@ -7,40 +7,4 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 
-<!--html_preserve-->
-<style type="text/css">
-.main-container {
-  max-width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-}
-</style>
-<div class="jumbotron">
-    <div class="container">
-      <h1 class="display-3">Sungkyu Jung</h1>
-      <p>Interested in statistical theory and methods for Non-Euclidean and High-Dimensional data analysis and Data Science. </p>
-      <p><a class="btn btn-primary btn-lg" href="pubs.html" role="button">My publications</a>
-      <a class="btn btn-primary btn-lg" href="TeachingPage.html" role="button">Courses</a></p>
-    </div>
-</div>
 
-
-<div class="container">
-   <div class="row">
-        <div class="col-md-8">
-        	<h2>Brief Biography</h2>
-          	<p> 
-          	I am an Associate Professor of <a href="http://www.stat.pitt.edu/">Statistics</a> at the <a href="http://www.pitt.edu/">University of Pittsburgh</a>. I joined Pitt after completing my PhD at the University of North Carolina at Chapel Hill. </p>
-          	
-          		<p>Research interest lies in the theoretical study and applications of modern Statistics and Data Science in the analysis of data that lie on non-standard spaces. This context includes the high-dimension, low-sample-size (HDLSS) situation, non-Euclidean data analysis, interplay between geometry and statistics, and data fusion. In particular, models and methodologies for dimension reduction, visualization of important variation and hypothesis testings need to be developed with special care for these modern data situations. Particular applications include analysis of directions, landmark-based and skeletally-modeled object shapes, data in stratified spaces or from multiple sources, and retreiving low-dimensional geometrics structures in high-dimensional data. </p>
-          		
-          		
-        <p> - Last updated: `r tmp<-Sys.setlocale("LC_TIME", "C")` `r format(Sys.Date(), "%B %d, %Y")`</p>  	
-			  </div>
-
-        <div class="col-md-4">
-   			</div>
-		</div>
-</div>
-<!--/html_preserve-->
- 
