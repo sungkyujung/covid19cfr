@@ -1,0 +1,1610 @@
+date,time,state,confirmed,deceased
+2020.1.21,0,Washington,1,0
+2020.1.22,0,Washington,1,0
+2020.1.23,0,Washington,1,0
+2020.1.24,0,Illinois,1,0
+2020.1.24,0,Washington,1,0
+2020.1.25,0,California,1,0
+2020.1.25,0,Illinois,1,0
+2020.1.25,0,Washington,1,0
+2020.1.26,0,Arizona,1,0
+2020.1.26,0,California,2,0
+2020.1.26,0,Illinois,1,0
+2020.1.26,0,Washington,1,0
+2020.1.27,0,Arizona,1,0
+2020.1.27,0,California,2,0
+2020.1.27,0,Illinois,1,0
+2020.1.27,0,Washington,1,0
+2020.1.28,0,Arizona,1,0
+2020.1.28,0,California,2,0
+2020.1.28,0,Illinois,1,0
+2020.1.28,0,Washington,1,0
+2020.1.29,0,Arizona,1,0
+2020.1.29,0,California,2,0
+2020.1.29,0,Illinois,1,0
+2020.1.29,0,Washington,1,0
+2020.1.30,0,Arizona,1,0
+2020.1.30,0,California,2,0
+2020.1.30,0,Illinois,2,0
+2020.1.30,0,Washington,1,0
+2020.1.31,0,Arizona,1,0
+2020.1.31,0,California,3,0
+2020.1.31,0,Illinois,2,0
+2020.1.31,0,Washington,1,0
+2020.2.1,0,Arizona,1,0
+2020.2.1,0,California,3,0
+2020.2.1,0,Illinois,2,0
+2020.2.1,0,Massachusetts,1,0
+2020.2.1,0,Washington,1,0
+2020.2.2,0,Arizona,1,0
+2020.2.2,0,California,6,0
+2020.2.2,0,Illinois,2,0
+2020.2.2,0,Massachusetts,1,0
+2020.2.2,0,Washington,1,0
+2020.2.3,0,Arizona,1,0
+2020.2.3,0,California,6,0
+2020.2.3,0,Illinois,2,0
+2020.2.3,0,Massachusetts,1,0
+2020.2.3,0,Washington,1,0
+2020.2.4,0,Arizona,1,0
+2020.2.4,0,California,6,0
+2020.2.4,0,Illinois,2,0
+2020.2.4,0,Massachusetts,1,0
+2020.2.4,0,Washington,1,0
+2020.2.5,0,Arizona,1,0
+2020.2.5,0,California,6,0
+2020.2.5,0,Illinois,2,0
+2020.2.5,0,Massachusetts,1,0
+2020.2.5,0,Washington,1,0
+2020.2.5,0,Wisconsin,1,0
+2020.2.6,0,Arizona,1,0
+2020.2.6,0,California,6,0
+2020.2.6,0,Illinois,2,0
+2020.2.6,0,Massachusetts,1,0
+2020.2.6,0,Washington,1,0
+2020.2.6,0,Wisconsin,1,0
+2020.2.7,0,Arizona,1,0
+2020.2.7,0,California,6,0
+2020.2.7,0,Illinois,2,0
+2020.2.7,0,Massachusetts,1,0
+2020.2.7,0,Washington,1,0
+2020.2.7,0,Wisconsin,1,0
+2020.2.8,0,Arizona,1,0
+2020.2.8,0,California,6,0
+2020.2.8,0,Illinois,2,0
+2020.2.8,0,Massachusetts,1,0
+2020.2.8,0,Washington,1,0
+2020.2.8,0,Wisconsin,1,0
+2020.2.9,0,Arizona,1,0
+2020.2.9,0,California,6,0
+2020.2.9,0,Illinois,2,0
+2020.2.9,0,Massachusetts,1,0
+2020.2.9,0,Washington,1,0
+2020.2.9,0,Wisconsin,1,0
+2020.2.10,0,Arizona,1,0
+2020.2.10,0,California,7,0
+2020.2.10,0,Illinois,2,0
+2020.2.10,0,Massachusetts,1,0
+2020.2.10,0,Washington,1,0
+2020.2.10,0,Wisconsin,1,0
+2020.2.11,0,Arizona,1,0
+2020.2.11,0,California,7,0
+2020.2.11,0,Illinois,2,0
+2020.2.11,0,Massachusetts,1,0
+2020.2.11,0,Washington,1,0
+2020.2.11,0,Wisconsin,1,0
+2020.2.12,0,Arizona,1,0
+2020.2.12,0,California,7,0
+2020.2.12,0,Illinois,2,0
+2020.2.12,0,Massachusetts,1,0
+2020.2.12,0,Texas,1,0
+2020.2.12,0,Washington,1,0
+2020.2.12,0,Wisconsin,1,0
+2020.2.13,0,Arizona,1,0
+2020.2.13,0,California,7,0
+2020.2.13,0,Illinois,2,0
+2020.2.13,0,Massachusetts,1,0
+2020.2.13,0,Texas,2,0
+2020.2.13,0,Washington,1,0
+2020.2.13,0,Wisconsin,1,0
+2020.2.14,0,Arizona,1,0
+2020.2.14,0,California,7,0
+2020.2.14,0,Illinois,2,0
+2020.2.14,0,Massachusetts,1,0
+2020.2.14,0,Texas,2,0
+2020.2.14,0,Washington,1,0
+2020.2.14,0,Wisconsin,1,0
+2020.2.15,0,Arizona,1,0
+2020.2.15,0,California,7,0
+2020.2.15,0,Illinois,2,0
+2020.2.15,0,Massachusetts,1,0
+2020.2.15,0,Texas,2,0
+2020.2.15,0,Washington,1,0
+2020.2.15,0,Wisconsin,1,0
+2020.2.16,0,Arizona,1,0
+2020.2.16,0,California,7,0
+2020.2.16,0,Illinois,2,0
+2020.2.16,0,Massachusetts,1,0
+2020.2.16,0,Texas,2,0
+2020.2.16,0,Washington,1,0
+2020.2.16,0,Wisconsin,1,0
+2020.2.17,0,Arizona,1,0
+2020.2.17,0,California,7,0
+2020.2.17,0,Illinois,2,0
+2020.2.17,0,Massachusetts,1,0
+2020.2.17,0,Nebraska,10,0
+2020.2.17,0,Texas,2,0
+2020.2.17,0,Washington,1,0
+2020.2.17,0,Wisconsin,1,0
+2020.2.18,0,Arizona,1,0
+2020.2.18,0,California,7,0
+2020.2.18,0,Illinois,2,0
+2020.2.18,0,Massachusetts,1,0
+2020.2.18,0,Nebraska,10,0
+2020.2.18,0,Texas,2,0
+2020.2.18,0,Washington,1,0
+2020.2.18,0,Wisconsin,1,0
+2020.2.19,0,Arizona,1,0
+2020.2.19,0,California,7,0
+2020.2.19,0,Illinois,2,0
+2020.2.19,0,Massachusetts,1,0
+2020.2.19,0,Nebraska,10,0
+2020.2.19,0,Texas,2,0
+2020.2.19,0,Washington,1,0
+2020.2.19,0,Wisconsin,1,0
+2020.2.20,0,Arizona,1,0
+2020.2.20,0,California,8,0
+2020.2.20,0,Illinois,2,0
+2020.2.20,0,Massachusetts,1,0
+2020.2.20,0,Nebraska,11,0
+2020.2.20,0,Texas,2,0
+2020.2.20,0,Washington,1,0
+2020.2.20,0,Wisconsin,1,0
+2020.2.21,0,Arizona,1,0
+2020.2.21,0,California,9,0
+2020.2.21,0,Illinois,2,0
+2020.2.21,0,Massachusetts,1,0
+2020.2.21,0,Nebraska,11,0
+2020.2.21,0,Texas,4,0
+2020.2.21,0,Washington,1,0
+2020.2.21,0,Wisconsin,1,0
+2020.2.22,0,Arizona,1,0
+2020.2.22,0,California,9,0
+2020.2.22,0,Illinois,2,0
+2020.2.22,0,Massachusetts,1,0
+2020.2.22,0,Nebraska,11,0
+2020.2.22,0,Texas,4,0
+2020.2.22,0,Washington,1,0
+2020.2.22,0,Wisconsin,1,0
+2020.2.23,0,Arizona,1,0
+2020.2.23,0,California,9,0
+2020.2.23,0,Illinois,2,0
+2020.2.23,0,Massachusetts,1,0
+2020.2.23,0,Nebraska,11,0
+2020.2.23,0,Texas,4,0
+2020.2.23,0,Washington,1,0
+2020.2.23,0,Wisconsin,1,0
+2020.2.24,0,Arizona,1,0
+2020.2.24,0,California,11,0
+2020.2.24,0,Illinois,2,0
+2020.2.24,0,Massachusetts,1,0
+2020.2.24,0,Nebraska,12,0
+2020.2.24,0,Texas,10,0
+2020.2.24,0,Washington,5,0
+2020.2.24,0,Wisconsin,1,0
+2020.2.25,0,Arizona,1,0
+2020.2.25,0,California,11,0
+2020.2.25,0,Illinois,2,0
+2020.2.25,0,Massachusetts,1,0
+2020.2.25,0,Nebraska,13,0
+2020.2.25,0,Texas,10,0
+2020.2.25,0,Utah,1,0
+2020.2.25,0,Washington,5,0
+2020.2.25,0,Wisconsin,1,0
+2020.2.26,0,Arizona,1,0
+2020.2.26,0,California,26,0
+2020.2.26,0,Illinois,2,0
+2020.2.26,0,Massachusetts,1,0
+2020.2.26,0,Nebraska,13,0
+2020.2.26,0,Texas,10,0
+2020.2.26,0,Utah,1,0
+2020.2.26,0,Washington,5,0
+2020.2.26,0,Wisconsin,1,0
+2020.2.27,0,Arizona,1,0
+2020.2.27,0,California,26,0
+2020.2.27,0,Illinois,2,0
+2020.2.27,0,Massachusetts,1,0
+2020.2.27,0,Nebraska,13,0
+2020.2.27,0,Texas,10,0
+2020.2.27,0,Utah,1,0
+2020.2.27,0,Washington,5,0
+2020.2.27,0,Wisconsin,1,0
+2020.2.28,0,Arizona,1,0
+2020.2.28,0,California,27,0
+2020.2.28,0,Illinois,2,0
+2020.2.28,0,Massachusetts,1,0
+2020.2.28,0,Nebraska,13,0
+2020.2.28,0,Oregon,1,0
+2020.2.28,0,Texas,11,0
+2020.2.28,0,Utah,1,0
+2020.2.28,0,Washington,7,0
+2020.2.28,0,Wisconsin,1,0
+2020.2.29,0,Arizona,1,0
+2020.2.29,0,California,28,0
+2020.2.29,0,Illinois,3,0
+2020.2.29,0,Massachusetts,1,0
+2020.2.29,0,Nebraska,13,0
+2020.2.29,0,Oregon,1,0
+2020.2.29,0,Texas,11,0
+2020.2.29,0,Utah,1,0
+2020.2.29,0,Washington,10,1
+2020.2.29,0,Wisconsin,1,0
+2020.3.1,0,Arizona,1,0
+2020.3.1,0,California,33,0
+2020.3.1,0,Florida,2,0
+2020.3.1,0,Illinois,3,0
+2020.3.1,0,Massachusetts,1,0
+2020.3.1,0,Nebraska,13,0
+2020.3.1,0,New York,1,0
+2020.3.1,0,Oregon,2,0
+2020.3.1,0,Rhode Island,2,0
+2020.3.1,0,Texas,11,0
+2020.3.1,0,Utah,1,0
+2020.3.1,0,Washington,17,3
+2020.3.1,0,Wisconsin,1,0
+2020.3.2,0,Arizona,1,0
+2020.3.2,0,California,38,0
+2020.3.2,0,Florida,2,0
+2020.3.2,0,Georgia,2,0
+2020.3.2,0,Illinois,4,0
+2020.3.2,0,Massachusetts,2,0
+2020.3.2,0,Nebraska,13,0
+2020.3.2,0,New Hampshire,1,0
+2020.3.2,0,New York,1,0
+2020.3.2,0,Oregon,2,0
+2020.3.2,0,Rhode Island,2,0
+2020.3.2,0,Texas,11,0
+2020.3.2,0,Utah,1,0
+2020.3.2,0,Washington,23,6
+2020.3.2,0,Wisconsin,1,0
+2020.3.3,0,Arizona,2,0
+2020.3.3,0,California,45,0
+2020.3.3,0,Florida,3,0
+2020.3.3,0,Georgia,2,0
+2020.3.3,0,Illinois,4,0
+2020.3.3,0,Massachusetts,2,0
+2020.3.3,0,Nebraska,13,0
+2020.3.3,0,New Hampshire,2,0
+2020.3.3,0,New York,2,0
+2020.3.3,0,North Carolina,1,0
+2020.3.3,0,Oregon,2,0
+2020.3.3,0,Rhode Island,2,0
+2020.3.3,0,Texas,11,0
+2020.3.3,0,Utah,1,0
+2020.3.3,0,Washington,32,10
+2020.3.3,0,Wisconsin,1,0
+2020.3.4,0,Arizona,2,0
+2020.3.4,0,California,55,1
+2020.3.4,0,Florida,3,0
+2020.3.4,0,Georgia,2,0
+2020.3.4,0,Illinois,4,0
+2020.3.4,0,Massachusetts,2,0
+2020.3.4,0,Nebraska,13,0
+2020.3.4,0,New Hampshire,2,0
+2020.3.4,0,New Jersey,1,0
+2020.3.4,0,New York,11,0
+2020.3.4,0,North Carolina,1,0
+2020.3.4,0,Oregon,2,0
+2020.3.4,0,Rhode Island,2,0
+2020.3.4,0,Texas,12,0
+2020.3.4,0,Utah,1,0
+2020.3.4,0,Washington,47,11
+2020.3.4,0,Wisconsin,1,0
+2020.3.5,0,Arizona,2,0
+2020.3.5,0,California,67,1
+2020.3.5,0,Colorado,2,0
+2020.3.5,0,Florida,4,0
+2020.3.5,0,Georgia,2,0
+2020.3.5,0,Illinois,5,0
+2020.3.5,0,Maryland,3,0
+2020.3.5,0,Massachusetts,3,0
+2020.3.5,0,Nebraska,13,0
+2020.3.5,0,Nevada,2,0
+2020.3.5,0,New Hampshire,2,0
+2020.3.5,0,New Jersey,2,0
+2020.3.5,0,New York,22,0
+2020.3.5,0,North Carolina,1,0
+2020.3.5,0,Oregon,2,0
+2020.3.5,0,Rhode Island,2,0
+2020.3.5,0,Tennessee,1,0
+2020.3.5,0,Texas,16,0
+2020.3.5,0,Utah,1,0
+2020.3.5,0,Washington,75,11
+2020.3.5,0,Wisconsin,1,0
+2020.3.6,0,Arizona,3,0
+2020.3.6,0,California,81,1
+2020.3.6,0,Colorado,8,0
+2020.3.6,0,Florida,7,2
+2020.3.6,0,Georgia,3,0
+2020.3.6,0,Hawaii,1,0
+2020.3.6,0,Illinois,6,0
+2020.3.6,0,Indiana,1,0
+2020.3.6,0,Kentucky,1,0
+2020.3.6,0,Maryland,3,0
+2020.3.6,0,Massachusetts,8,0
+2020.3.6,0,Minnesota,1,0
+2020.3.6,0,Nebraska,14,0
+2020.3.6,0,Nevada,2,0
+2020.3.6,0,New Hampshire,2,0
+2020.3.6,0,New Jersey,4,0
+2020.3.6,0,New York,44,0
+2020.3.6,0,North Carolina,2,0
+2020.3.6,0,Oklahoma,1,0
+2020.3.6,0,Oregon,2,0
+2020.3.6,0,Pennsylvania,2,0
+2020.3.6,0,Rhode Island,3,0
+2020.3.6,0,South Carolina,2,0
+2020.3.6,0,Tennessee,1,0
+2020.3.6,0,Texas,19,0
+2020.3.6,0,Utah,3,0
+2020.3.6,0,Washington,86,12
+2020.3.6,0,Wisconsin,1,0
+2020.3.7,0,Arizona,5,0
+2020.3.7,0,California,100,1
+2020.3.7,0,Colorado,8,0
+2020.3.7,0,District of Columbia,1,0
+2020.3.7,0,Florida,12,2
+2020.3.7,0,Georgia,7,0
+2020.3.7,0,Hawaii,1,0
+2020.3.7,0,Illinois,6,0
+2020.3.7,0,Indiana,1,0
+2020.3.7,0,Kansas,1,0
+2020.3.7,0,Kentucky,1,0
+2020.3.7,0,Maryland,3,0
+2020.3.7,0,Massachusetts,13,0
+2020.3.7,0,Minnesota,1,0
+2020.3.7,0,Missouri,1,0
+2020.3.7,0,Nebraska,14,0
+2020.3.7,0,Nevada,2,0
+2020.3.7,0,New Hampshire,4,0
+2020.3.7,0,New Jersey,4,0
+2020.3.7,0,New York,89,0
+2020.3.7,0,North Carolina,2,0
+2020.3.7,0,Oklahoma,1,0
+2020.3.7,0,Oregon,6,0
+2020.3.7,0,Pennsylvania,4,0
+2020.3.7,0,Rhode Island,3,0
+2020.3.7,0,South Carolina,2,0
+2020.3.7,0,Tennessee,1,0
+2020.3.7,0,Texas,19,0
+2020.3.7,0,Utah,3,0
+2020.3.7,0,Vermont,1,0
+2020.3.7,0,Virginia,1,0
+2020.3.7,0,Washington,110,16
+2020.3.7,0,Wisconsin,1,0
+2020.3.8,0,Arizona,5,0
+2020.3.8,0,California,112,1
+2020.3.8,0,Colorado,8,0
+2020.3.8,0,Connecticut,1,0
+2020.3.8,0,District of Columbia,1,0
+2020.3.8,0,Florida,13,2
+2020.3.8,0,Georgia,11,0
+2020.3.8,0,Hawaii,2,0
+2020.3.8,0,Illinois,7,0
+2020.3.8,0,Indiana,2,0
+2020.3.8,0,Iowa,3,0
+2020.3.8,0,Kansas,1,0
+2020.3.8,0,Kentucky,4,0
+2020.3.8,0,Maryland,5,0
+2020.3.8,0,Massachusetts,28,0
+2020.3.8,0,Minnesota,2,0
+2020.3.8,0,Missouri,1,0
+2020.3.8,0,Nebraska,16,0
+2020.3.8,0,Nevada,4,0
+2020.3.8,0,New Hampshire,4,0
+2020.3.8,0,New Jersey,6,0
+2020.3.8,0,New York,106,0
+2020.3.8,0,North Carolina,2,0
+2020.3.8,0,Oklahoma,1,0
+2020.3.8,0,Oregon,13,0
+2020.3.8,0,Pennsylvania,6,0
+2020.3.8,0,Rhode Island,3,0
+2020.3.8,0,South Carolina,6,0
+2020.3.8,0,Tennessee,3,0
+2020.3.8,0,Texas,23,0
+2020.3.8,0,Utah,3,0
+2020.3.8,0,Vermont,1,0
+2020.3.8,0,Virginia,2,0
+2020.3.8,0,Washington,141,19
+2020.3.8,0,Wisconsin,1,0
+2020.3.9,0,Arizona,6,0
+2020.3.9,0,California,172,2
+2020.3.9,0,Colorado,12,0
+2020.3.9,0,Connecticut,2,0
+2020.3.9,0,District of Columbia,4,0
+2020.3.9,0,Florida,14,2
+2020.3.9,0,Georgia,17,0
+2020.3.9,0,Hawaii,2,0
+2020.3.9,0,Illinois,11,0
+2020.3.9,0,Indiana,4,0
+2020.3.9,0,Iowa,8,0
+2020.3.9,0,Kansas,1,0
+2020.3.9,0,Kentucky,5,0
+2020.3.9,0,Louisiana,1,0
+2020.3.9,0,Maryland,6,0
+2020.3.9,0,Massachusetts,41,0
+2020.3.9,0,Minnesota,2,0
+2020.3.9,0,Missouri,1,0
+2020.3.9,0,Nebraska,16,0
+2020.3.9,0,Nevada,4,0
+2020.3.9,0,New Hampshire,4,0
+2020.3.9,0,New Jersey,11,0
+2020.3.9,0,New York,142,0
+2020.3.9,0,North Carolina,7,0
+2020.3.9,0,Ohio,3,0
+2020.3.9,0,Oklahoma,1,0
+2020.3.9,0,Oregon,13,0
+2020.3.9,0,Pennsylvania,10,0
+2020.3.9,0,Rhode Island,3,0
+2020.3.9,0,South Carolina,7,0
+2020.3.9,0,Tennessee,4,0
+2020.3.9,0,Texas,24,0
+2020.3.9,0,Utah,3,0
+2020.3.9,0,Vermont,1,0
+2020.3.9,0,Virginia,5,0
+2020.3.9,0,Washington,179,22
+2020.3.9,0,Wisconsin,2,0
+2020.3.10,0,Arizona,6,0
+2020.3.10,0,California,179,3
+2020.3.10,0,Colorado,17,0
+2020.3.10,0,Connecticut,2,0
+2020.3.10,0,District of Columbia,4,0
+2020.3.10,0,Florida,23,2
+2020.3.10,0,Georgia,22,0
+2020.3.10,0,Hawaii,2,0
+2020.3.10,0,Illinois,19,0
+2020.3.10,0,Indiana,6,0
+2020.3.10,0,Iowa,13,0
+2020.3.10,0,Kansas,1,0
+2020.3.10,0,Kentucky,7,0
+2020.3.10,0,Louisiana,6,0
+2020.3.10,0,Maryland,9,0
+2020.3.10,0,Massachusetts,92,0
+2020.3.10,0,Michigan,2,0
+2020.3.10,0,Minnesota,3,0
+2020.3.10,0,Missouri,1,0
+2020.3.10,0,Nebraska,17,0
+2020.3.10,0,Nevada,4,0
+2020.3.10,0,New Hampshire,5,0
+2020.3.10,0,New Jersey,15,1
+2020.3.10,0,New York,173,0
+2020.3.10,0,North Carolina,7,0
+2020.3.10,0,Ohio,3,0
+2020.3.10,0,Oklahoma,2,0
+2020.3.10,0,Oregon,14,0
+2020.3.10,0,Pennsylvania,12,0
+2020.3.10,0,Rhode Island,5,0
+2020.3.10,0,South Carolina,9,0
+2020.3.10,0,South Dakota,5,1
+2020.3.10,0,Tennessee,7,0
+2020.3.10,0,Texas,31,0
+2020.3.10,0,Utah,4,0
+2020.3.10,0,Vermont,1,0
+2020.3.10,0,Virginia,8,0
+2020.3.10,0,Washington,279,24
+2020.3.10,0,Wisconsin,3,0
+2020.3.11,0,Arizona,9,0
+2020.3.11,0,Arkansas,1,0
+2020.3.11,0,California,202,4
+2020.3.11,0,Colorado,34,0
+2020.3.11,0,Connecticut,3,0
+2020.3.11,0,Delaware,1,0
+2020.3.11,0,District of Columbia,10,0
+2020.3.11,0,Florida,26,2
+2020.3.11,0,Georgia,31,0
+2020.3.11,0,Hawaii,2,0
+2020.3.11,0,Illinois,25,0
+2020.3.11,0,Indiana,11,0
+2020.3.11,0,Iowa,14,0
+2020.3.11,0,Kansas,1,0
+2020.3.11,0,Kentucky,7,0
+2020.3.11,0,Louisiana,13,0
+2020.3.11,0,Maryland,13,0
+2020.3.11,0,Massachusetts,95,0
+2020.3.11,0,Michigan,2,0
+2020.3.11,0,Minnesota,5,0
+2020.3.11,0,Mississippi,1,0
+2020.3.11,0,Missouri,1,0
+2020.3.11,0,Nebraska,23,0
+2020.3.11,0,Nevada,7,0
+2020.3.11,0,New Hampshire,5,0
+2020.3.11,0,New Jersey,23,1
+2020.3.11,0,New Mexico,4,0
+2020.3.11,0,New York,217,0
+2020.3.11,0,North Carolina,8,0
+2020.3.11,0,North Dakota,1,0
+2020.3.11,0,Ohio,4,0
+2020.3.11,0,Oklahoma,2,0
+2020.3.11,0,Oregon,20,0
+2020.3.11,0,Pennsylvania,16,0
+2020.3.11,0,Rhode Island,5,0
+2020.3.11,0,South Carolina,10,0
+2020.3.11,0,South Dakota,8,1
+2020.3.11,0,Tennessee,8,0
+2020.3.11,0,Texas,33,0
+2020.3.11,0,Utah,5,0
+2020.3.11,0,Vermont,2,0
+2020.3.11,0,Virginia,10,0
+2020.3.11,0,Washington,338,29
+2020.3.11,0,Wisconsin,6,0
+2020.3.11,0,Wyoming,1,0
+2020.3.12,0,Alaska,1,0
+2020.3.12,0,Arizona,9,0
+2020.3.12,0,Arkansas,6,0
+2020.3.12,0,California,252,4
+2020.3.12,0,Colorado,49,1
+2020.3.12,0,Connecticut,6,0
+2020.3.12,0,Delaware,4,0
+2020.3.12,0,District of Columbia,10,0
+2020.3.12,0,Florida,46,2
+2020.3.12,0,Georgia,31,1
+2020.3.12,0,Hawaii,2,0
+2020.3.12,0,Illinois,32,0
+2020.3.12,0,Indiana,12,0
+2020.3.12,0,Iowa,16,0
+2020.3.12,0,Kansas,5,1
+2020.3.12,0,Kentucky,11,0
+2020.3.12,0,Louisiana,14,0
+2020.3.12,0,Maine,1,0
+2020.3.12,0,Maryland,13,0
+2020.3.12,0,Massachusetts,108,0
+2020.3.12,0,Michigan,12,0
+2020.3.12,0,Minnesota,9,0
+2020.3.12,0,Mississippi,1,0
+2020.3.12,0,Missouri,2,0
+2020.3.12,0,Nebraska,24,0
+2020.3.12,0,Nevada,11,0
+2020.3.12,0,New Hampshire,6,0
+2020.3.12,0,New Jersey,29,1
+2020.3.12,0,New Mexico,6,0
+2020.3.12,0,New York,326,0
+2020.3.12,0,North Carolina,16,0
+2020.3.12,0,North Dakota,1,0
+2020.3.12,0,Ohio,5,0
+2020.3.12,0,Oklahoma,2,0
+2020.3.12,0,Oregon,30,0
+2020.3.12,0,Pennsylvania,22,0
+2020.3.12,0,Rhode Island,5,0
+2020.3.12,0,South Carolina,12,0
+2020.3.12,0,South Dakota,8,1
+2020.3.12,0,Tennessee,18,0
+2020.3.12,0,Texas,41,0
+2020.3.12,0,Utah,7,0
+2020.3.12,0,Vermont,2,0
+2020.3.12,0,Virginia,17,0
+2020.3.12,0,Washington,419,32
+2020.3.12,0,Wisconsin,8,0
+2020.3.12,0,Wyoming,1,0
+2020.3.13,0,Alabama,6,0
+2020.3.13,0,Alaska,1,0
+2020.3.13,0,Arizona,9,0
+2020.3.13,0,Arkansas,7,0
+2020.3.13,0,California,320,5
+2020.3.13,0,Colorado,78,2
+2020.3.13,0,Connecticut,11,0
+2020.3.13,0,Delaware,4,0
+2020.3.13,0,District of Columbia,10,0
+2020.3.13,0,Florida,70,2
+2020.3.13,0,Georgia,41,1
+2020.3.13,0,Hawaii,2,0
+2020.3.13,0,Idaho,1,0
+2020.3.13,0,Illinois,46,0
+2020.3.13,0,Indiana,12,0
+2020.3.13,0,Iowa,17,0
+2020.3.13,0,Kansas,6,1
+2020.3.13,0,Kentucky,11,0
+2020.3.13,0,Louisiana,36,0
+2020.3.13,0,Maine,2,0
+2020.3.13,0,Maryland,18,0
+2020.3.13,0,Massachusetts,123,0
+2020.3.13,0,Michigan,25,0
+2020.3.13,0,Minnesota,14,0
+2020.3.13,0,Mississippi,6,0
+2020.3.13,0,Missouri,4,0
+2020.3.13,0,Montana,4,0
+2020.3.13,0,Nebraska,27,0
+2020.3.13,0,Nevada,19,0
+2020.3.13,0,New Hampshire,7,0
+2020.3.13,0,New Jersey,50,1
+2020.3.13,0,New Mexico,10,0
+2020.3.13,0,New York,421,0
+2020.3.13,0,North Carolina,18,0
+2020.3.13,0,North Dakota,1,0
+2020.3.13,0,Ohio,13,0
+2020.3.13,0,Oklahoma,3,0
+2020.3.13,0,Oregon,30,0
+2020.3.13,0,Pennsylvania,41,0
+2020.3.13,0,Puerto Rico,3,0
+2020.3.13,0,Rhode Island,20,0
+2020.3.13,0,South Carolina,13,0
+2020.3.13,0,South Dakota,9,1
+2020.3.13,0,Tennessee,26,0
+2020.3.13,0,Texas,58,0
+2020.3.13,0,Utah,7,0
+2020.3.13,0,Vermont,2,0
+2020.3.13,0,Virginia,30,0
+2020.3.13,0,Washington,511,37
+2020.3.13,0,Wisconsin,19,0
+2020.3.13,0,Wyoming,2,0
+2020.3.14,0,Alabama,12,0
+2020.3.14,0,Alaska,1,0
+2020.3.14,0,Arizona,12,0
+2020.3.14,0,Arkansas,9,0
+2020.3.14,0,California,381,5
+2020.3.14,0,Colorado,103,2
+2020.3.14,0,Connecticut,20,0
+2020.3.14,0,Delaware,4,0
+2020.3.14,0,District of Columbia,16,0
+2020.3.14,0,Florida,70,3
+2020.3.14,0,Georgia,65,1
+2020.3.14,0,Hawaii,4,0
+2020.3.14,0,Idaho,5,0
+2020.3.14,0,Illinois,66,0
+2020.3.14,0,Indiana,15,0
+2020.3.14,0,Iowa,18,0
+2020.3.14,0,Kansas,8,1
+2020.3.14,0,Kentucky,18,0
+2020.3.14,0,Louisiana,77,1
+2020.3.14,0,Maine,3,0
+2020.3.14,0,Maryland,27,0
+2020.3.14,0,Massachusetts,138,0
+2020.3.14,0,Michigan,33,0
+2020.3.14,0,Minnesota,21,0
+2020.3.14,0,Mississippi,6,0
+2020.3.14,0,Missouri,5,0
+2020.3.14,0,Montana,6,0
+2020.3.14,0,Nebraska,29,0
+2020.3.14,0,Nevada,21,0
+2020.3.14,0,New Hampshire,7,0
+2020.3.14,0,New Jersey,75,2
+2020.3.14,0,New Mexico,13,0
+2020.3.14,0,New York,610,2
+2020.3.14,0,North Carolina,25,0
+2020.3.14,0,North Dakota,1,0
+2020.3.14,0,Ohio,26,0
+2020.3.14,0,Oklahoma,4,0
+2020.3.14,0,Oregon,36,1
+2020.3.14,0,Pennsylvania,47,0
+2020.3.14,0,Puerto Rico,4,0
+2020.3.14,0,Rhode Island,20,0
+2020.3.14,0,South Carolina,19,0
+2020.3.14,0,South Dakota,9,1
+2020.3.14,0,Tennessee,32,0
+2020.3.14,0,Texas,69,0
+2020.3.14,0,Utah,21,0
+2020.3.14,0,Vermont,5,0
+2020.3.14,0,Virgin Islands,1,0
+2020.3.14,0,Virginia,42,1
+2020.3.14,0,Washington,609,40
+2020.3.14,0,Wisconsin,27,0
+2020.3.14,0,Wyoming,3,0
+2020.3.15,0,Alabama,23,0
+2020.3.15,0,Alaska,1,0
+2020.3.15,0,Arizona,13,0
+2020.3.15,0,Arkansas,16,0
+2020.3.15,0,California,478,6
+2020.3.15,0,Colorado,136,2
+2020.3.15,0,Connecticut,26,0
+2020.3.15,0,Delaware,7,0
+2020.3.15,0,District of Columbia,17,0
+2020.3.15,0,Florida,109,3
+2020.3.15,0,Georgia,97,1
+2020.3.15,0,Guam,3,0
+2020.3.15,0,Hawaii,7,0
+2020.3.15,0,Idaho,5,0
+2020.3.15,0,Illinois,94,0
+2020.3.15,0,Indiana,19,0
+2020.3.15,0,Iowa,22,0
+2020.3.15,0,Kansas,9,1
+2020.3.15,0,Kentucky,21,0
+2020.3.15,0,Louisiana,103,2
+2020.3.15,0,Maine,12,0
+2020.3.15,0,Maryland,32,0
+2020.3.15,0,Massachusetts,164,0
+2020.3.15,0,Michigan,53,0
+2020.3.15,0,Minnesota,35,0
+2020.3.15,0,Mississippi,10,0
+2020.3.15,0,Missouri,5,0
+2020.3.15,0,Montana,6,0
+2020.3.15,0,Nebraska,31,0
+2020.3.15,0,Nevada,26,0
+2020.3.15,0,New Hampshire,13,0
+2020.3.15,0,New Jersey,98,2
+2020.3.15,0,New Mexico,17,0
+2020.3.15,0,New York,732,6
+2020.3.15,0,North Carolina,32,0
+2020.3.15,0,North Dakota,1,0
+2020.3.15,0,Ohio,37,0
+2020.3.15,0,Oklahoma,8,0
+2020.3.15,0,Oregon,39,1
+2020.3.15,0,Pennsylvania,68,0
+2020.3.15,0,Puerto Rico,5,0
+2020.3.15,0,Rhode Island,20,0
+2020.3.15,0,South Carolina,28,0
+2020.3.15,0,South Dakota,9,1
+2020.3.15,0,Tennessee,39,0
+2020.3.15,0,Texas,80,0
+2020.3.15,0,Utah,29,0
+2020.3.15,0,Vermont,8,0
+2020.3.15,0,Virgin Islands,1,0
+2020.3.15,0,Virginia,45,1
+2020.3.15,0,Washington,675,42
+2020.3.15,0,Wisconsin,33,0
+2020.3.15,0,Wyoming,3,0
+2020.3.16,0,Alabama,29,0
+2020.3.16,0,Alaska,3,0
+2020.3.16,0,Arizona,18,0
+2020.3.16,0,Arkansas,22,0
+2020.3.16,0,California,588,11
+2020.3.16,0,Colorado,161,2
+2020.3.16,0,Connecticut,41,0
+2020.3.16,0,Delaware,8,0
+2020.3.16,0,District of Columbia,22,0
+2020.3.16,0,Florida,141,4
+2020.3.16,0,Georgia,118,1
+2020.3.16,0,Guam,3,0
+2020.3.16,0,Hawaii,10,0
+2020.3.16,0,Idaho,5,0
+2020.3.16,0,Illinois,104,0
+2020.3.16,0,Indiana,24,1
+2020.3.16,0,Iowa,22,0
+2020.3.16,0,Kansas,11,1
+2020.3.16,0,Kentucky,22,1
+2020.3.16,0,Louisiana,137,3
+2020.3.16,0,Maine,17,0
+2020.3.16,0,Maryland,39,0
+2020.3.16,0,Massachusetts,197,0
+2020.3.16,0,Michigan,54,0
+2020.3.16,0,Minnesota,54,0
+2020.3.16,0,Mississippi,12,0
+2020.3.16,0,Missouri,9,0
+2020.3.16,0,Montana,8,0
+2020.3.16,0,Nebraska,33,0
+2020.3.16,0,Nevada,45,1
+2020.3.16,0,New Hampshire,17,0
+2020.3.16,0,New Jersey,176,3
+2020.3.16,0,New Mexico,21,0
+2020.3.16,0,New York,950,10
+2020.3.16,0,North Carolina,34,0
+2020.3.16,0,North Dakota,1,0
+2020.3.16,0,Ohio,50,0
+2020.3.16,0,Oklahoma,10,0
+2020.3.16,0,Oregon,46,1
+2020.3.16,0,Pennsylvania,81,0
+2020.3.16,0,Puerto Rico,5,0
+2020.3.16,0,Rhode Island,21,0
+2020.3.16,0,South Carolina,33,1
+2020.3.16,0,South Dakota,10,1
+2020.3.16,0,Tennessee,52,0
+2020.3.16,0,Texas,87,1
+2020.3.16,0,Utah,40,0
+2020.3.16,0,Vermont,12,0
+2020.3.16,0,Virgin Islands,2,0
+2020.3.16,0,Virginia,51,1
+2020.3.16,0,Washington,794,48
+2020.3.16,0,Wisconsin,47,0
+2020.3.16,0,Wyoming,10,0
+2020.3.17,0,Alabama,39,0
+2020.3.17,0,Alaska,6,0
+2020.3.17,0,Arizona,20,0
+2020.3.17,0,Arkansas,22,0
+2020.3.17,0,California,732,14
+2020.3.17,0,Colorado,183,3
+2020.3.17,0,Connecticut,68,0
+2020.3.17,0,Delaware,16,0
+2020.3.17,0,District of Columbia,31,0
+2020.3.17,0,Florida,210,6
+2020.3.17,0,Georgia,142,1
+2020.3.17,0,Guam,3,0
+2020.3.17,0,Hawaii,14,0
+2020.3.17,0,Idaho,9,0
+2020.3.17,0,Illinois,159,1
+2020.3.17,0,Indiana,30,2
+2020.3.17,0,Iowa,29,0
+2020.3.17,0,Kansas,17,1
+2020.3.17,0,Kentucky,26,1
+2020.3.17,0,Louisiana,196,5
+2020.3.17,0,Maine,32,0
+2020.3.17,0,Maryland,57,0
+2020.3.17,0,Massachusetts,218,0
+2020.3.17,0,Michigan,65,0
+2020.3.17,0,Minnesota,60,0
+2020.3.17,0,Mississippi,21,0
+2020.3.17,0,Missouri,16,0
+2020.3.17,0,Montana,8,0
+2020.3.17,0,Nebraska,36,0
+2020.3.17,0,Nevada,55,1
+2020.3.17,0,New Hampshire,26,0
+2020.3.17,0,New Jersey,268,3
+2020.3.17,0,New Mexico,23,0
+2020.3.17,0,New York,1374,17
+2020.3.17,0,North Carolina,42,0
+2020.3.17,0,North Dakota,5,0
+2020.3.17,0,Ohio,67,0
+2020.3.17,0,Oklahoma,18,0
+2020.3.17,0,Oregon,66,2
+2020.3.17,0,Pennsylvania,101,0
+2020.3.17,0,Puerto Rico,5,0
+2020.3.17,0,Rhode Island,23,0
+2020.3.17,0,South Carolina,47,1
+2020.3.17,0,South Dakota,11,1
+2020.3.17,0,Tennessee,73,0
+2020.3.17,0,Texas,106,1
+2020.3.17,0,Utah,51,0
+2020.3.17,0,Vermont,14,0
+2020.3.17,0,Virgin Islands,2,0
+2020.3.17,0,Virginia,67,2
+2020.3.17,0,Washington,908,54
+2020.3.17,0,West Virginia,1,0
+2020.3.17,0,Wisconsin,72,0
+2020.3.17,0,Wyoming,15,0
+2020.3.18,0,Alabama,51,0
+2020.3.18,0,Alaska,9,0
+2020.3.18,0,Arizona,28,0
+2020.3.18,0,Arkansas,33,0
+2020.3.18,0,California,893,17
+2020.3.18,0,Colorado,216,3
+2020.3.18,0,Connecticut,96,1
+2020.3.18,0,Delaware,26,0
+2020.3.18,0,District of Columbia,36,0
+2020.3.18,0,Florida,326,7
+2020.3.18,0,Georgia,193,3
+2020.3.18,0,Guam,8,0
+2020.3.18,0,Hawaii,16,0
+2020.3.18,0,Idaho,11,0
+2020.3.18,0,Illinois,286,1
+2020.3.18,0,Indiana,39,2
+2020.3.18,0,Iowa,38,0
+2020.3.18,0,Kansas,22,1
+2020.3.18,0,Kentucky,35,1
+2020.3.18,0,Louisiana,280,7
+2020.3.18,0,Maine,43,0
+2020.3.18,0,Maryland,85,1
+2020.3.18,0,Massachusetts,256,0
+2020.3.18,0,Michigan,80,1
+2020.3.18,0,Minnesota,77,0
+2020.3.18,0,Mississippi,34,0
+2020.3.18,0,Missouri,21,1
+2020.3.18,0,Montana,12,0
+2020.3.18,0,Nebraska,43,0
+2020.3.18,0,Nevada,82,1
+2020.3.18,0,New Hampshire,39,0
+2020.3.18,0,New Jersey,427,5
+2020.3.18,0,New Mexico,28,0
+2020.3.18,0,New York,2382,27
+2020.3.18,0,North Carolina,66,0
+2020.3.18,0,North Dakota,7,0
+2020.3.18,0,Ohio,90,0
+2020.3.18,0,Oklahoma,29,0
+2020.3.18,0,Oregon,74,3
+2020.3.18,0,Pennsylvania,139,1
+2020.3.18,0,Puerto Rico,5,0
+2020.3.18,0,Rhode Island,33,0
+2020.3.18,0,South Carolina,60,1
+2020.3.18,0,South Dakota,11,1
+2020.3.18,0,Tennessee,98,0
+2020.3.18,0,Texas,166,2
+2020.3.18,0,Utah,65,0
+2020.3.18,0,Vermont,19,0
+2020.3.18,0,Virgin Islands,3,0
+2020.3.18,0,Virginia,78,2
+2020.3.18,0,Washington,1026,68
+2020.3.18,0,West Virginia,2,0
+2020.3.18,0,Wisconsin,106,0
+2020.3.18,0,Wyoming,17,0
+2020.3.19,0,Alabama,78,0
+2020.3.19,0,Alaska,12,0
+2020.3.19,0,Arizona,47,0
+2020.3.19,0,Arkansas,62,0
+2020.3.19,0,California,1067,19
+2020.3.19,0,Colorado,278,5
+2020.3.19,0,Connecticut,159,4
+2020.3.19,0,Delaware,30,0
+2020.3.19,0,District of Columbia,68,0
+2020.3.19,0,Florida,434,8
+2020.3.19,0,Georgia,282,10
+2020.3.19,0,Guam,12,0
+2020.3.19,0,Hawaii,26,0
+2020.3.19,0,Idaho,23,0
+2020.3.19,0,Illinois,420,4
+2020.3.19,0,Indiana,56,2
+2020.3.19,0,Iowa,44,0
+2020.3.19,0,Kansas,35,1
+2020.3.19,0,Kentucky,47,2
+2020.3.19,0,Louisiana,392,10
+2020.3.19,0,Maine,52,0
+2020.3.19,0,Maryland,108,1
+2020.3.19,0,Massachusetts,328,0
+2020.3.19,0,Michigan,334,3
+2020.3.19,0,Minnesota,89,0
+2020.3.19,0,Mississippi,50,1
+2020.3.19,0,Missouri,35,1
+2020.3.19,0,Montana,19,0
+2020.3.19,0,Nebraska,47,0
+2020.3.19,0,Nevada,99,1
+2020.3.19,0,New Hampshire,44,0
+2020.3.19,0,New Jersey,735,9
+2020.3.19,0,New Mexico,35,0
+2020.3.19,0,New York,4152,30
+2020.3.19,0,North Carolina,104,0
+2020.3.19,0,North Dakota,19,0
+2020.3.19,0,Ohio,120,0
+2020.3.19,0,Oklahoma,44,1
+2020.3.19,0,Oregon,87,3
+2020.3.19,0,Pennsylvania,187,1
+2020.3.19,0,Puerto Rico,6,0
+2020.3.19,0,Rhode Island,44,0
+2020.3.19,0,South Carolina,81,1
+2020.3.19,0,South Dakota,14,1
+2020.3.19,0,Tennessee,155,0
+2020.3.19,0,Texas,248,4
+2020.3.19,0,Utah,80,0
+2020.3.19,0,Vermont,22,2
+2020.3.19,0,Virgin Islands,3,0
+2020.3.19,0,Virginia,94,2
+2020.3.19,0,Washington,1228,75
+2020.3.19,0,West Virginia,5,0
+2020.3.19,0,Wisconsin,155,2
+2020.3.19,0,Wyoming,18,0
+2020.3.20,0,Alabama,106,0
+2020.3.20,0,Alaska,14,0
+2020.3.20,0,Arizona,70,1
+2020.3.20,0,Arkansas,100,0
+2020.3.20,0,California,1283,24
+2020.3.20,0,Colorado,364,5
+2020.3.20,0,Connecticut,194,4
+2020.3.20,0,Delaware,39,0
+2020.3.20,0,District of Columbia,77,1
+2020.3.20,0,Florida,564,9
+2020.3.20,0,Georgia,482,14
+2020.3.20,0,Guam,14,0
+2020.3.20,0,Hawaii,37,0
+2020.3.20,0,Idaho,31,0
+2020.3.20,0,Illinois,583,5
+2020.3.20,0,Indiana,79,3
+2020.3.20,0,Iowa,45,0
+2020.3.20,0,Kansas,49,1
+2020.3.20,0,Kentucky,63,2
+2020.3.20,0,Louisiana,537,10
+2020.3.20,0,Maine,57,0
+2020.3.20,0,Maryland,150,2
+2020.3.20,0,Massachusetts,413,1
+2020.3.20,0,Michigan,548,4
+2020.3.20,0,Minnesota,115,0
+2020.3.20,0,Mississippi,80,1
+2020.3.20,0,Missouri,73,3
+2020.3.20,0,Montana,19,0
+2020.3.20,0,Nebraska,53,0
+2020.3.20,0,Nevada,165,2
+2020.3.20,0,New Hampshire,55,0
+2020.3.20,0,New Jersey,896,11
+2020.3.20,0,New Mexico,43,0
+2020.3.20,0,New York,7102,57
+2020.3.20,0,North Carolina,144,0
+2020.3.20,0,North Dakota,27,0
+2020.3.20,0,Ohio,169,1
+2020.3.20,0,Oklahoma,49,1
+2020.3.20,0,Oregon,114,3
+2020.3.20,0,Pennsylvania,269,1
+2020.3.20,0,Puerto Rico,14,0
+2020.3.20,0,Rhode Island,44,0
+2020.3.20,0,South Carolina,126,3
+2020.3.20,0,South Dakota,14,1
+2020.3.20,0,Tennessee,237,0
+2020.3.20,0,Texas,377,5
+2020.3.20,0,Utah,112,0
+2020.3.20,0,Vermont,29,2
+2020.3.20,0,Virgin Islands,6,0
+2020.3.20,0,Virginia,115,2
+2020.3.20,0,Washington,1404,83
+2020.3.20,0,West Virginia,8,0
+2020.3.20,0,Wisconsin,216,3
+2020.3.20,0,Wyoming,22,0
+2020.3.21,0,Alabama,131,0
+2020.3.21,0,Alaska,21,0
+2020.3.21,0,Arizona,104,1
+2020.3.21,0,Arkansas,118,0
+2020.3.21,0,California,1544,28
+2020.3.21,0,Colorado,475,6
+2020.3.21,0,Connecticut,223,5
+2020.3.21,0,Delaware,45,0
+2020.3.21,0,District of Columbia,98,1
+2020.3.21,0,Florida,764,11
+2020.3.21,0,Georgia,552,20
+2020.3.21,0,Guam,15,0
+2020.3.21,0,Hawaii,48,0
+2020.3.21,0,Idaho,42,0
+2020.3.21,0,Illinois,751,6
+2020.3.21,0,Indiana,126,4
+2020.3.21,0,Iowa,68,0
+2020.3.21,0,Kansas,57,2
+2020.3.21,0,Kentucky,84,3
+2020.3.21,0,Louisiana,763,16
+2020.3.21,0,Maine,70,0
+2020.3.21,0,Maryland,195,3
+2020.3.21,0,Massachusetts,525,2
+2020.3.21,0,Michigan,787,6
+2020.3.21,0,Minnesota,138,1
+2020.3.21,0,Mississippi,140,1
+2020.3.21,0,Missouri,93,3
+2020.3.21,0,Montana,29,0
+2020.3.21,0,Nebraska,61,0
+2020.3.21,0,Nevada,165,2
+2020.3.21,0,New Hampshire,65,0
+2020.3.21,0,New Jersey,1336,16
+2020.3.21,0,New Mexico,57,0
+2020.3.21,0,New York,10356,80
+2020.3.21,0,North Carolina,184,0
+2020.3.21,0,North Dakota,28,0
+2020.3.21,0,Ohio,247,3
+2020.3.21,0,Oklahoma,53,1
+2020.3.21,0,Oregon,137,4
+2020.3.21,0,Pennsylvania,388,2
+2020.3.21,0,Puerto Rico,21,1
+2020.3.21,0,Rhode Island,66,0
+2020.3.21,0,South Carolina,172,3
+2020.3.21,0,South Dakota,14,1
+2020.3.21,0,Tennessee,312,2
+2020.3.21,0,Texas,547,5
+2020.3.21,0,Utah,138,0
+2020.3.21,0,Vermont,49,2
+2020.3.21,0,Virgin Islands,6,0
+2020.3.21,0,Virginia,152,3
+2020.3.21,0,Washington,1655,95
+2020.3.21,0,West Virginia,12,0
+2020.3.21,0,Wisconsin,281,4
+2020.3.21,0,Wyoming,24,0
+2020.3.22,0,Alabama,157,0
+2020.3.22,0,Alaska,22,0
+2020.3.22,0,Arizona,153,2
+2020.3.22,0,Arkansas,165,0
+2020.3.22,0,California,1851,35
+2020.3.22,0,Colorado,591,7
+2020.3.22,0,Connecticut,327,8
+2020.3.22,0,Delaware,56,0
+2020.3.22,0,District of Columbia,116,2
+2020.3.22,0,Florida,1000,13
+2020.3.22,0,Georgia,620,25
+2020.3.22,0,Guam,27,1
+2020.3.22,0,Hawaii,56,0
+2020.3.22,0,Idaho,47,0
+2020.3.22,0,Illinois,1047,9
+2020.3.22,0,Indiana,201,6
+2020.3.22,0,Iowa,90,0
+2020.3.22,0,Kansas,66,2
+2020.3.22,0,Kentucky,103,3
+2020.3.22,0,Louisiana,837,20
+2020.3.22,0,Maine,89,0
+2020.3.22,0,Maryland,245,3
+2020.3.22,0,Massachusetts,646,5
+2020.3.22,0,Michigan,1033,9
+2020.3.22,0,Minnesota,171,1
+2020.3.22,0,Mississippi,207,1
+2020.3.22,0,Missouri,130,3
+2020.3.22,0,Montana,34,0
+2020.3.22,0,Nebraska,62,0
+2020.3.22,0,Nevada,190,2
+2020.3.22,0,New Hampshire,78,0
+2020.3.22,0,New Jersey,1914,20
+2020.3.22,0,New Mexico,65,0
+2020.3.22,0,New York,15168,122
+2020.3.22,0,North Carolina,269,0
+2020.3.22,0,North Dakota,30,0
+2020.3.22,0,Ohio,351,3
+2020.3.22,0,Oklahoma,67,2
+2020.3.22,0,Oregon,161,5
+2020.3.22,0,Pennsylvania,504,3
+2020.3.22,0,Puerto Rico,23,1
+2020.3.22,0,Rhode Island,83,0
+2020.3.22,0,South Carolina,194,3
+2020.3.22,0,South Dakota,21,1
+2020.3.22,0,Tennessee,424,2
+2020.3.22,0,Texas,632,7
+2020.3.22,0,Utah,182,1
+2020.3.22,0,Vermont,52,2
+2020.3.22,0,Virgin Islands,17,0
+2020.3.22,0,Virginia,219,6
+2020.3.22,0,Washington,1844,97
+2020.3.22,0,West Virginia,16,0
+2020.3.22,0,Wisconsin,382,4
+2020.3.22,0,Wyoming,26,0
+2020.3.23,0,Alabama,196,0
+2020.3.23,0,Alaska,36,0
+2020.3.23,0,Arizona,234,2
+2020.3.23,0,Arkansas,201,0
+2020.3.23,0,California,2240,39
+2020.3.23,0,Colorado,721,10
+2020.3.23,0,Connecticut,415,10
+2020.3.23,0,Delaware,87,0
+2020.3.23,0,District of Columbia,138,2
+2020.3.23,0,Florida,1222,18
+2020.3.23,0,Georgia,800,25
+2020.3.23,0,Guam,29,1
+2020.3.23,0,Hawaii,77,0
+2020.3.23,0,Idaho,50,0
+2020.3.23,0,Illinois,1285,12
+2020.3.23,0,Indiana,259,7
+2020.3.23,0,Iowa,105,0
+2020.3.23,0,Kansas,82,2
+2020.3.23,0,Kentucky,124,3
+2020.3.23,0,Louisiana,1172,34
+2020.3.23,0,Maine,107,0
+2020.3.23,0,Maryland,290,3
+2020.3.23,0,Massachusetts,777,5
+2020.3.23,0,Michigan,1324,16
+2020.3.23,0,Minnesota,235,1
+2020.3.23,0,Mississippi,249,1
+2020.3.23,0,Missouri,183,4
+2020.3.23,0,Montana,45,0
+2020.3.23,0,Nebraska,73,0
+2020.3.23,0,Nevada,265,4
+2020.3.23,0,New Hampshire,101,1
+2020.3.23,0,New Jersey,2844,27
+2020.3.23,0,New Mexico,83,0
+2020.3.23,0,New York,20875,159
+2020.3.23,0,North Carolina,303,0
+2020.3.23,0,North Dakota,32,0
+2020.3.23,0,Ohio,444,6
+2020.3.23,0,Oklahoma,81,2
+2020.3.23,0,Oregon,191,5
+2020.3.23,0,Pennsylvania,644,6
+2020.3.23,0,Puerto Rico,31,2
+2020.3.23,0,Rhode Island,106,0
+2020.3.23,0,South Carolina,299,5
+2020.3.23,0,South Dakota,28,1
+2020.3.23,0,Tennessee,522,2
+2020.3.23,0,Texas,728,7
+2020.3.23,0,Utah,257,1
+2020.3.23,0,Vermont,75,2
+2020.3.23,0,Virgin Islands,17,0
+2020.3.23,0,Virginia,254,6
+2020.3.23,0,Washington,2101,110
+2020.3.23,0,West Virginia,16,0
+2020.3.23,0,Wisconsin,418,5
+2020.3.23,0,Wyoming,28,0
+2020.3.24,0,Alabama,242,0
+2020.3.24,0,Alaska,42,0
+2020.3.24,0,Arizona,326,6
+2020.3.24,0,Arkansas,232,2
+2020.3.24,0,California,2644,52
+2020.3.24,0,Colorado,912,11
+2020.3.24,0,Connecticut,618,12
+2020.3.24,0,Delaware,104,0
+2020.3.24,0,District of Columbia,183,2
+2020.3.24,0,Florida,1467,19
+2020.3.24,0,Georgia,1097,38
+2020.3.24,0,Guam,32,1
+2020.3.24,0,Hawaii,90,0
+2020.3.24,0,Idaho,73,0
+2020.3.24,0,Illinois,1535,16
+2020.3.24,0,Indiana,366,12
+2020.3.24,0,Iowa,124,1
+2020.3.24,0,Kansas,99,3
+2020.3.24,0,Kentucky,157,3
+2020.3.24,0,Louisiana,1388,46
+2020.3.24,0,Maine,118,0
+2020.3.24,0,Maryland,349,4
+2020.3.24,0,Massachusetts,1159,11
+2020.3.24,0,Michigan,1791,24
+2020.3.24,0,Minnesota,262,1
+2020.3.24,0,Mississippi,320,1
+2020.3.24,0,Missouri,255,5
+2020.3.24,0,Montana,51,0
+2020.3.24,0,Nebraska,77,0
+2020.3.24,0,Nevada,315,6
+2020.3.24,0,New Hampshire,108,1
+2020.3.24,0,New Jersey,3675,44
+2020.3.24,0,New Mexico,100,0
+2020.3.24,0,New York,25665,218
+2020.3.24,0,North Carolina,399,0
+2020.3.24,0,North Dakota,36,0
+2020.3.24,0,Ohio,564,8
+2020.3.24,0,Oklahoma,106,3
+2020.3.24,0,Oregon,209,8
+2020.3.24,0,Pennsylvania,851,7
+2020.3.24,0,Puerto Rico,39,2
+2020.3.24,0,Rhode Island,124,0
+2020.3.24,0,South Carolina,342,7
+2020.3.24,0,South Dakota,30,1
+2020.3.24,0,Tennessee,679,2
+2020.3.24,0,Texas,857,11
+2020.3.24,0,Utah,298,1
+2020.3.24,0,Vermont,95,7
+2020.3.24,0,Virgin Islands,17,0
+2020.3.24,0,Virginia,290,7
+2020.3.24,0,Washington,2469,123
+2020.3.24,0,West Virginia,39,0
+2020.3.24,0,Wisconsin,481,5
+2020.3.24,0,Wyoming,37,0
+2020.3.25,0,Alabama,386,1
+2020.3.25,0,Alaska,59,0
+2020.3.25,0,Arizona,402,6
+2020.3.25,0,Arkansas,308,2
+2020.3.25,0,California,3183,67
+2020.3.25,0,Colorado,1086,19
+2020.3.25,0,Connecticut,875,19
+2020.3.25,0,Delaware,119,0
+2020.3.25,0,District of Columbia,231,3
+2020.3.25,0,Florida,1965,23
+2020.3.25,0,Georgia,1387,47
+2020.3.25,0,Guam,32,1
+2020.3.25,0,Hawaii,95,0
+2020.3.25,0,Idaho,123,0
+2020.3.25,0,Illinois,1875,21
+2020.3.25,0,Indiana,479,14
+2020.3.25,0,Iowa,145,1
+2020.3.25,0,Kansas,132,3
+2020.3.25,0,Kentucky,198,5
+2020.3.25,0,Louisiana,1795,65
+2020.3.25,0,Maine,142,0
+2020.3.25,0,Maryland,423,4
+2020.3.25,0,Massachusetts,1838,15
+2020.3.25,0,Michigan,2294,43
+2020.3.25,0,Minnesota,287,1
+2020.3.25,0,Mississippi,377,5
+2020.3.25,0,Missouri,377,8
+2020.3.25,0,Montana,65,0
+2020.3.25,0,Nebraska,84,0
+2020.3.25,0,Nevada,405,10
+2020.3.25,0,New Hampshire,137,1
+2020.3.25,0,New Jersey,4402,62
+2020.3.25,0,New Mexico,112,1
+2020.3.25,0,New York,33066,325
+2020.3.25,0,North Carolina,563,1
+2020.3.25,0,North Dakota,45,0
+2020.3.25,0,Ohio,706,11
+2020.3.25,0,Oklahoma,164,5
+2020.3.25,0,Oregon,266,10
+2020.3.25,0,Pennsylvania,1151,11
+2020.3.25,0,Puerto Rico,51,2
+2020.3.25,0,Rhode Island,132,0
+2020.3.25,0,South Carolina,424,7
+2020.3.25,0,South Dakota,41,1
+2020.3.25,0,Tennessee,784,3
+2020.3.25,0,Texas,1119,12
+2020.3.25,0,Utah,346,1
+2020.3.25,0,Vermont,123,8
+2020.3.25,0,Virgin Islands,17,0
+2020.3.25,0,Virginia,391,9
+2020.3.25,0,Washington,2585,130
+2020.3.25,0,West Virginia,51,0
+2020.3.25,0,Wisconsin,623,7
+2020.3.25,0,Wyoming,49,0
+2020.3.26,0,Alabama,538,3
+2020.3.26,0,Alaska,69,0
+2020.3.26,0,Arizona,508,8
+2020.3.26,0,Arkansas,351,3
+2020.3.26,0,California,4060,82
+2020.3.26,0,Colorado,1432,24
+2020.3.26,0,Connecticut,1012,21
+2020.3.26,0,Delaware,143,1
+2020.3.26,0,District of Columbia,267,3
+2020.3.26,0,Florida,2477,29
+2020.3.26,0,Georgia,1643,56
+2020.3.26,0,Guam,49,1
+2020.3.26,0,Hawaii,106,0
+2020.3.26,0,Idaho,189,3
+2020.3.26,0,Illinois,2538,26
+2020.3.26,0,Indiana,656,18
+2020.3.26,0,Iowa,179,1
+2020.3.26,0,Kansas,171,3
+2020.3.26,0,Kentucky,248,5
+2020.3.26,0,Louisiana,2305,83
+2020.3.26,0,Maine,155,0
+2020.3.26,0,Maryland,581,4
+2020.3.26,0,Massachusetts,2417,25
+2020.3.26,0,Michigan,2878,63
+2020.3.26,0,Minnesota,346,2
+2020.3.26,0,Mississippi,487,6
+2020.3.26,0,Missouri,507,8
+2020.3.26,0,Montana,90,0
+2020.3.26,0,Nebraska,92,0
+2020.3.26,0,Nevada,535,10
+2020.3.26,0,New Hampshire,158,1
+2020.3.26,0,New Jersey,6876,81
+2020.3.26,0,New Mexico,136,1
+2020.3.26,0,New York,38987,432
+2020.3.26,0,North Carolina,638,2
+2020.3.26,0,North Dakota,58,0
+2020.3.26,0,Ohio,867,15
+2020.3.26,0,Oklahoma,248,7
+2020.3.26,0,Oregon,316,11
+2020.3.26,0,Pennsylvania,1690,16
+2020.3.26,0,Puerto Rico,64,2
+2020.3.26,0,Rhode Island,165,0
+2020.3.26,0,South Carolina,456,9
+2020.3.26,0,South Dakota,46,1
+2020.3.26,0,Tennessee,981,3
+2020.3.26,0,Texas,1543,21
+2020.3.26,0,Utah,402,1
+2020.3.26,0,Vermont,158,9
+2020.3.26,0,Virgin Islands,17,0
+2020.3.26,0,Virginia,604,14
+2020.3.26,0,Washington,3208,151
+2020.3.26,0,West Virginia,76,0
+2020.3.26,0,Wisconsin,754,10
+2020.3.26,0,Wyoming,56,0
+2020.3.27,0,Alabama,639,4
+2020.3.27,0,Alaska,85,1
+2020.3.27,0,Arizona,665,15
+2020.3.27,0,Arkansas,386,3
+2020.3.27,0,California,4914,102
+2020.3.27,0,Colorado,1735,31
+2020.3.27,0,Connecticut,1291,27
+2020.3.27,0,Delaware,165,2
+2020.3.27,0,District of Columbia,304,4
+2020.3.27,0,Florida,3198,46
+2020.3.27,0,Georgia,2198,64
+2020.3.27,0,Guam,53,1
+2020.3.27,0,Hawaii,120,0
+2020.3.27,0,Idaho,231,4
+2020.3.27,0,Illinois,3029,37
+2020.3.27,0,Indiana,982,26
+2020.3.27,0,Iowa,235,3
+2020.3.27,0,Kansas,212,4
+2020.3.27,0,Kentucky,302,8
+2020.3.27,0,Louisiana,2746,119
+2020.3.27,0,Maine,168,1
+2020.3.27,0,Maryland,775,5
+2020.3.27,0,Massachusetts,3240,35
+2020.3.27,0,Michigan,3657,93
+2020.3.27,0,Minnesota,398,4
+2020.3.27,0,Mississippi,579,8
+2020.3.27,0,Missouri,671,9
+2020.3.27,0,Montana,121,1
+2020.3.27,0,Nebraska,100,2
+2020.3.27,0,Nevada,621,10
+2020.3.27,0,New Hampshire,187,2
+2020.3.27,0,New Jersey,8825,108
+2020.3.27,0,New Mexico,191,1
+2020.3.27,0,New York,44635,535
+2020.3.27,0,North Carolina,783,3
+2020.3.27,0,North Dakota,68,1
+2020.3.27,0,Ohio,1144,22
+2020.3.27,0,Oklahoma,322,8
+2020.3.27,0,Oregon,414,12
+2020.3.27,0,Pennsylvania,2218,23
+2020.3.27,0,Puerto Rico,79,3
+2020.3.27,0,Rhode Island,203,0
+2020.3.27,0,South Carolina,539,13
+2020.3.27,0,South Dakota,58,1
+2020.3.27,0,Tennessee,1062,6
+2020.3.27,0,Texas,1942,23
+2020.3.27,0,Utah,480,2
+2020.3.27,0,Vermont,184,10
+2020.3.27,0,Virgin Islands,19,0
+2020.3.27,0,Virginia,606,14
+2020.3.27,0,Washington,3770,177
+2020.3.27,0,West Virginia,96,0
+2020.3.27,0,Wisconsin,930,16
+2020.3.27,0,Wyoming,73,0
+2020.3.28,0,Alabama,720,4
+2020.3.28,0,Alaska,102,1
+2020.3.28,0,Arizona,773,15
+2020.3.28,0,Arkansas,409,5
+2020.3.28,0,California,5565,121
+2020.3.28,0,Colorado,2061,44
+2020.3.28,0,Connecticut,1524,33
+2020.3.28,0,Delaware,214,5
+2020.3.28,0,District of Columbia,342,4
+2020.3.28,0,Florida,4038,56
+2020.3.28,0,Georgia,2447,79
+2020.3.28,0,Guam,57,1
+2020.3.28,0,Hawaii,151,0
+2020.3.28,0,Idaho,261,5
+2020.3.28,0,Illinois,3547,50
+2020.3.28,0,Indiana,1232,31
+2020.3.28,0,Iowa,298,3
+2020.3.28,0,Kansas,271,6
+2020.3.28,0,Kentucky,394,9
+2020.3.28,0,Louisiana,3315,137
+2020.3.28,0,Maine,211,1
+2020.3.28,0,Maryland,1066,10
+2020.3.28,0,Massachusetts,4257,44
+2020.3.28,0,Michigan,4635,111
+2020.3.28,0,Minnesota,441,5
+2020.3.28,0,Mississippi,669,13
+2020.3.28,0,Missouri,838,10
+2020.3.28,0,Montana,147,1
+2020.3.28,0,Nebraska,122,2
+2020.3.28,0,Nevada,738,14
+2020.3.28,0,New Hampshire,214,2
+2020.3.28,0,New Jersey,11124,140
+2020.3.28,0,New Mexico,208,2
+2020.3.28,0,New York,53363,782
+2020.3.28,0,North Carolina,972,4
+2020.3.28,0,North Dakota,94,1
+2020.3.28,0,Northern Mariana Islands,2,0
+2020.3.28,0,Ohio,1406,25
+2020.3.28,0,Oklahoma,377,15
+2020.3.28,0,Oregon,479,13
+2020.3.28,0,Pennsylvania,2815,35
+2020.3.28,0,Puerto Rico,100,3
+2020.3.28,0,Rhode Island,239,2
+2020.3.28,0,South Carolina,660,15
+2020.3.28,0,South Dakota,68,1
+2020.3.28,0,Tennessee,1373,6
+2020.3.28,0,Texas,2161,29
+2020.3.28,0,Utah,608,2
+2020.3.28,0,Vermont,211,12
+2020.3.28,0,Virgin Islands,19,0
+2020.3.28,0,Virginia,740,17
+2020.3.28,0,Washington,4311,191
+2020.3.28,0,West Virginia,113,0
+2020.3.28,0,Wisconsin,1042,17
+2020.3.28,0,Wyoming,84,0
+2020.3.29,0,Alabama,830,5
+2020.3.29,0,Alaska,114,1
+2020.3.29,0,Arizona,929,18
+2020.3.29,0,Arkansas,449,6
+2020.3.29,0,California,6266,130
+2020.3.29,0,Colorado,2315,47
+2020.3.29,0,Connecticut,1993,34
+2020.3.29,0,Delaware,232,6
+2020.3.29,0,District of Columbia,342,4
+2020.3.29,0,Florida,4942,59
+2020.3.29,0,Georgia,2683,83
+2020.3.29,0,Guam,58,1
+2020.3.29,0,Hawaii,175,0
+2020.3.29,0,Idaho,310,6
+2020.3.29,0,Illinois,4613,70
+2020.3.29,0,Indiana,1514,32
+2020.3.29,0,Iowa,336,4
+2020.3.29,0,Kansas,332,7
+2020.3.29,0,Kentucky,439,9
+2020.3.29,0,Louisiana,3540,152
+2020.3.29,0,Maine,253,3
+2020.3.29,0,Maryland,1244,11
+2020.3.29,0,Massachusetts,4955,48
+2020.3.29,0,Michigan,5486,132
+2020.3.29,0,Minnesota,504,9
+2020.3.29,0,Mississippi,759,14
+2020.3.29,0,Missouri,903,12
+2020.3.29,0,Montana,161,1
+2020.3.29,0,Nebraska,137,2
+2020.3.29,0,Nevada,920,15
+2020.3.29,0,New Hampshire,258,3
+2020.3.29,0,New Jersey,13386,161
+2020.3.29,0,New Mexico,237,2
+2020.3.29,0,New York,59568,965
+2020.3.29,0,North Carolina,1167,6
+2020.3.29,0,North Dakota,98,1
+2020.3.29,0,Northern Mariana Islands,2,0
+2020.3.29,0,Ohio,1665,30
+2020.3.29,0,Oklahoma,429,16
+2020.3.29,0,Oregon,548,13
+2020.3.29,0,Pennsylvania,3441,40
+2020.3.29,0,Puerto Rico,127,5
+2020.3.29,0,Rhode Island,294,3
+2020.3.29,0,South Carolina,774,16
+2020.3.29,0,South Dakota,90,1
+2020.3.29,0,Tennessee,1537,7
+2020.3.29,0,Texas,2712,35
+2020.3.29,0,Utah,719,2
+2020.3.29,0,Vermont,235,12
+2020.3.29,0,Virgin Islands,23,0
+2020.3.29,0,Virginia,890,22
+2020.3.29,0,Washington,4896,207
+2020.3.29,0,West Virginia,124,1
+2020.3.29,0,Wisconsin,1120,17
+2020.3.29,0,Wyoming,87,0
+2020.3.30,0,Alabama,947,11
+2020.3.30,0,Alaska,119,2
+2020.3.30,0,Arizona,1169,20
+2020.3.30,0,Arkansas,508,7
+2020.3.30,0,California,7421,146
+2020.3.30,0,Colorado,2628,51
+2020.3.30,0,Connecticut,2571,36
+2020.3.30,0,Delaware,264,7
+2020.3.30,0,District of Columbia,495,9
+2020.3.30,0,Florida,5694,71
+2020.3.30,0,Georgia,3032,102
+2020.3.30,0,Guam,60,1
+2020.3.30,0,Hawaii,204,0
+2020.3.30,0,Idaho,415,7
+2020.3.30,0,Illinois,5070,84
+2020.3.30,0,Indiana,1788,35
+2020.3.30,0,Iowa,424,6
+2020.3.30,0,Kansas,373,9
+2020.3.30,0,Kentucky,480,11
+2020.3.30,0,Louisiana,4025,186
+2020.3.30,0,Maine,275,3
+2020.3.30,0,Maryland,1414,15
+2020.3.30,0,Massachusetts,5752,61
+2020.3.30,0,Michigan,6508,197
+2020.3.30,0,Minnesota,576,10
+2020.3.30,0,Mississippi,848,16
+2020.3.30,0,Missouri,1050,13
+2020.3.30,0,Montana,177,4
+2020.3.30,0,Nebraska,185,3
+2020.3.30,0,Nevada,1044,18
+2020.3.30,0,New Hampshire,314,3
+2020.3.30,0,New Jersey,16636,199
+2020.3.30,0,New Mexico,281,4
+2020.3.30,0,New York,67174,1224
+2020.3.30,0,North Carolina,1304,6
+2020.3.30,0,North Dakota,109,3
+2020.3.30,0,Northern Mariana Islands,2,0
+2020.3.30,0,Ohio,1933,40
+2020.3.30,0,Oklahoma,481,17
+2020.3.30,0,Oregon,606,16
+2020.3.30,0,Pennsylvania,4156,48
+2020.3.30,0,Puerto Rico,174,6
+2020.3.30,0,Rhode Island,408,4
+2020.3.30,0,South Carolina,925,18
+2020.3.30,0,South Dakota,101,1
+2020.3.30,0,Tennessee,1834,13
+2020.3.30,0,Texas,3043,46
+2020.3.30,0,Utah,806,4
+2020.3.30,0,Vermont,256,12
+2020.3.30,0,Virgin Islands,30,0
+2020.3.30,0,Virginia,1021,26
+2020.3.30,0,Washington,5179,221
+2020.3.30,0,West Virginia,145,1
+2020.3.30,0,Wisconsin,1267,20
+2020.3.30,0,Wyoming,95,0
+2020.3.31,0,Alabama,999,13
+2020.3.31,0,Alaska,133,2
+2020.3.31,0,Arizona,1298,24
+2020.3.31,0,Arkansas,564,8
+2020.3.31,0,California,8582,183
+2020.3.31,0,Colorado,2990,69
+2020.3.31,0,Connecticut,3128,69
+2020.3.31,0,Delaware,319,10
+2020.3.31,0,District of Columbia,495,9
+2020.3.31,0,Florida,6741,85
+2020.3.31,0,Georgia,4117,125
+2020.3.31,0,Guam,139,2
+2020.3.31,0,Hawaii,224,1
+2020.3.31,0,Idaho,526,9
+2020.3.31,0,Illinois,5994,107
+2020.3.31,0,Indiana,2159,50
+2020.3.31,0,Iowa,498,7
+2020.3.31,0,Kansas,434,10
+2020.3.31,0,Kentucky,590,18
+2020.3.31,0,Louisiana,5237,240
+2020.3.31,0,Maine,303,5
+2020.3.31,0,Maryland,1662,18
+2020.3.31,0,Massachusetts,6620,89
+2020.3.31,0,Michigan,7630,264
+2020.3.31,0,Minnesota,629,12
+2020.3.31,0,Mississippi,937,20
+2020.3.31,0,Missouri,1351,15
+2020.3.31,0,Montana,198,5
+2020.3.31,0,Nebraska,193,4
+2020.3.31,0,Nevada,1113,26
+2020.3.31,0,New Hampshire,367,3
+2020.3.31,0,New Jersey,18696,267
+2020.3.31,0,New Mexico,315,4
+2020.3.31,0,New York,75832,1550
+2020.3.31,0,North Carolina,1528,10
+2020.3.31,0,North Dakota,126,3
+2020.3.31,0,Northern Mariana Islands,2,0
+2020.3.31,0,Ohio,2199,55
+2020.3.31,0,Oklahoma,566,23
+2020.3.31,0,Oregon,690,18
+2020.3.31,0,Pennsylvania,4997,72
+2020.3.31,0,Puerto Rico,239,8
+2020.3.31,0,Rhode Island,488,8
+2020.3.31,0,South Carolina,1083,22
+2020.3.31,0,South Dakota,108,1
+2020.3.31,0,Tennessee,1834,13
+2020.3.31,0,Texas,3576,57
+2020.3.31,0,Utah,887,5
+2020.3.31,0,Vermont,293,13
+2020.3.31,0,Virgin Islands,30,0
+2020.3.31,0,Virginia,1250,27
+2020.3.31,0,Washington,5292,226
+2020.3.31,0,West Virginia,162,1
+2020.3.31,0,Wisconsin,1351,25
+2020.3.31,0,Wyoming,120,0
