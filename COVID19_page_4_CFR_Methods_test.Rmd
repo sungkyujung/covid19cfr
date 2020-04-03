@@ -1,0 +1,42 @@
+---
+title: "COVID-19 Case Fatality Rate in South Korea"
+#author: "Byungwon Kim"
+date: "4/2/2020"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Methods
+  * ### The presented age group-wise CFRs (Case Fatality Rates) are calculted using the below method in age groups separately, and the gross CFR is the weighted average of group-wise CFRs
+    + #### The CFR at time $t$ is estimated by
+      #### $$ \widehat{FR}(t) = \frac{\mbox{No. deceased patients }(t) + \mbox{Expected No. deaths in future}}{\mbox{No. confirmed patients }(t)} $$
+    + #### Here, the 'Expected No. deaths in future' is calculated by
+      #### $$ \mbox{Expected No. deaths in future} = \mbox{No. quarantined patients} (t) \times p_d $$
+    + #### $p_d$ denotes the probability of death and is estimated by the number of deceased patients divided by the number of confirmed patients at time $t$
+ 
+
+## Backgrounds
+  * #### There are 2 representative methods in calculating the CFR that WHO (World Health Organization) recommends to use
+    + #### 1. Proportion of deceased patients among the infected (practically, diagnostic-confirmed) patients
+    #### $$ FR_{WHO_1} = \frac{\mbox{No. deceased patients}}{\mbox{No. confirmed patients}} $$
+    + #### 2. Proportion of deceased patients among the deceased and recovered patients
+    #### $$ FR_{WHO_2} = \frac{\mbox{No. deceased patients}}{\mbox{No. deceased patients + No. recovered patients}} $$
+  * #### When the prevalence of epidemic disease is over, the two CFRs above become equal
+  * #### However, during the prevalence, the 1st one 'underestimates' the case fatality rate while the 2nd one 'overestimates' it
+
+
+##### *R codes*
+  * ##### https://github.com/sungkyujung/covid19cfr
+  
+##### *Contributors*
+  * ###### **Prof. Woncheol Jang**, Ph.D., Department of Statistics, Seoul National University, wcjang@snu.ac.kr
+  * ###### **Prof. Johan Lim**, Ph.D., Department of Statistics, Seoul National University, yohanlim@gmail.com
+  * ###### **Prof. Sungkyu Jung**, Ph.D., Department of Statistics, Seoul National University, sungkyu@snu.ac.kr
+  * ###### **Byungwon Kim**, Ph.D., Department of Statistics, Seoul National University, bwkim.hospi@gmail.com
+  * ###### **Seonghong Kim**, M.S., Department of Statistics, Seoul National University, sthentic@snu.ac.kr
+  
+
+##### *Disclaimer*
+###### *The information provided on the website is for general informational purposes only. All information on the site is provided in good faith, however we make no representation or warranty of any kind, express or implied, regarding the accuracy, adequacy, validity, reliability, availability or completeness of any information on the site. Under no circumstance shall we have any liability to you for any loss or damage of any kind incurred as a result of the use of the site or reliance on any information provided on the site. Your use of the site and your reliance on any information on the site is solely at your own risk. This disclaimer was created using Termly’s disclaimer generator.*

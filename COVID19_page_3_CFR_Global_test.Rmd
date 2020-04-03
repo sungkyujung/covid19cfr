@@ -1,0 +1,162 @@
+---
+title: "COVID-19 Case Fatality Rate: Global"
+#author: "Byungwon Kim"
+date: "4/1/2020"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+source("Code_functions_SCFR.r")
+C <- read.csv("Global_Cured.csv", header = TRUE, row.names = 1)
+D <- read.csv("Global_Dead.csv", header = TRUE, row.names = 1)
+U <- read.csv("Global_Unknown.csv", header = TRUE, row.names = 1)
+N <- read.csv("Global_Confirmed.csv", header = TRUE, row.names = 1)
+Country <- read.csv("Country_name.csv", header = TRUE)
+Country.name <- as.character(Country$Country)
+colnames(C) <- Country.name
+colnames(D) <- Country.name
+colnames(U) <- Country.name
+colnames(N) <- Country.name
+
+FR.ours <- SCFR_estimation(D = D, U = U, C = C, N = N, model.option = 1)
+FR.WHO1 <- SCFR_estimation(D = D, U = U, C = C, N = N, model.option = 2)
+```
+
+## Trend of Daily Gross Case Fatality Rate
+
+```{r figure_1_CFR, echo = FALSE, fig.height = 7, fig.width = 12}
+y.limit <- c(-0.01, max(FR.ours$gross, 
+                        FR.WHO1$gross) + 0.2)
+nt <- nrow(D)
+days <- rownames(C)
+
+
+
+par(mar = c(8,7,5,3))
+
+FR.ours$gross.lower[FR.ours$gross.lower<0]=0
+FR.ours$group.lower[FR.ours$group.lower<0]=0
+plot(1:nt, FR.ours$gross, 
+     type = "n", ylim = y.limit, xlim = c(0, nt + 1),
+     ylab = "", xlab = "", xaxt = "n", yaxt = "n", cex.lab = 1.5)
+polygon(c(1:nt, rev(1:nt)), c(FR.ours$gross.lower, rev(FR.ours$gross.upper)), 
+        border = NA, col = "gray")
+polygon(c(1:nt, rev(1:nt)), 
+        c(FR.ours$group.lower[,"Korea, South"], rev(FR.ours$group.upper[,"Korea, South"])), 
+        border = NA, col = "tan")
+polygon(c(1:nt, rev(1:nt)), 
+        c(FR.ours$group.lower[,"Italy"], rev(FR.ours$group.upper[,"Italy"])), 
+        border = NA, col = "wheat")
+lines(1:nt, FR.WHO1$gross, type = "l", lty = 2, lwd = 2, col = "black",
+      ylab = "", xlab = "")
+lines(1:nt, FR.ours$gross, type = "l", lty = 1, lwd = 2, col = "red",
+      ylab = "", xlab = "")
+lines(1:nt, FR.ours$group[,"Korea, South"], type = "l", lty = 1, lwd = 2, col = "blue",
+      ylab = "", xlab = "")
+lines(1:nt, FR.ours$group[,"Italy"], type = "l", lty = 1, lwd = 2, col = "seagreen",
+      ylab = "", xlab = "")
+legend("topright", 
+       c("WHO 1st = # deaths / # confirmed", 
+         "Our model - Country stratification",
+         "Our model - Korea, South",
+         "Our model - Italy"), 
+       col = c("black", "red", "blue", "seagreen"), 
+       lty = c(2,1,1,1),
+       lwd = c(2,2,2,2),
+       cex = 1.2)
+axis(side = 1, at = c(1, seq(10, length(days)-1, by = 10), length(days)),
+     labels = days[c(1, seq(10, length(days)-1, by = 10), length(days))],
+     las = 2, cex.axis = 1.3)
+axis(side = 2, at = seq(0, y.limit[2], by = 0.05),
+     labels = paste0(seq(0, round(y.limit[2] * 100, 0), by = 5), "%"),
+     las = 1, cex.axis = 1.3)
+
+```
+
+## Latest Country-wise Case Fatality Rates (TOP 10 countries in No. confirmed patients) as of 4/1/2020
+
+```{r figure_2_Country_ci, echo = FALSE, fig.height = 7, fig.width = 12}
+TOP10.index <- order(N[nrow(N),], decreasing = TRUE)[1:10]
+TOP10.CFR <- FR.ours$group[nrow(N), TOP10.index]
+TOP10.CFR.upper <- FR.ours$group.upper[nrow(N), TOP10.index]
+TOP10.CFR.lower <- FR.ours$group.lower[nrow(N), TOP10.index]
+CFR.order <- order(TOP10.CFR, decreasing = TRUE)
+
+par(mar = c(6, 10, 8, 3))
+
+max_x_lim = 400000
+barplot(-unlist(N[nrow(N),TOP10.index][rev(CFR.order)]),horiz = T,
+        axes=F,yaxt="n",space=0.5,col="white",xlim=c(-max_x_lim-10000,-0+10000))
+options("scipen" = 100)
+axis(side = 1, at = -seq(0, max_x_lim, by = 100000),
+     labels = seq(0, max_x_lim, by = 100000),
+     las = 1, cex.axis = 1.5,line = 2)
+
+par(mar = c(4, 10, 5, 3),new = T)
+plot(seq(0, 0.40, length.out = 12),
+     seq(0:11), type = "n", ylim = c(0,11.5), xlim = c(0, 0.40),
+     ylab = "", xlab = "",
+     xaxt = "n", yaxt = "n")
+points(FR.ours$gross[length(days)], 11, pch = 1, lwd = 10, col = "dodgerblue")
+points(FR.WHO1$gross[length(days)], 11, pch = 23, lwd = 5, col = "red")
+
+lines(c(FR.ours$gross.lower[length(days)],
+        FR.ours$gross.upper[length(days)]),
+      rep(11, 2),
+      type = "b", lty = 1, pch = c(91,93), lwd = 5, col = "seagreen")
+for(i in 1:10){
+  points(TOP10.CFR[CFR.order[i]], 11 - i, pch = 1, lwd = 10, col = "dodgerblue")
+  points(FR.WHO1$group[nrow(FR.WHO1$group),TOP10.index][CFR.order[i]], 11 - i, pch = 23, lwd = 5, col = "red")
+  lines(c(TOP10.CFR.lower[CFR.order[i]], 
+          TOP10.CFR.upper[CFR.order[i]]),
+        rep(11 - i, 2), 
+        type = "b", lty = 1, pch = c(91,93), lwd = 5, col = "seagreen")
+}
+axis(side = 3, at = seq(0, 0.40, by = 0.1),
+     labels = paste0(seq(0, 40, by = 10), "%"),
+     las = 1, cex.axis = 1.5)
+
+axis(side = 2, at = 11:1,
+     labels = c("Gross", names(TOP10.CFR)[CFR.order]),
+     las = 2, cex.axis = 1.5)
+
+title(ylab = "Age",line = 11,cex.lab = 1.3)
+title(xlab="# of confirmed cases", line = 2.5,cex.lab = 1.7)
+title(main="CFR", line = 3,cex.main=1.7)
+legend(x= 0.35, y = 11.9, legend = c("Our model", "WHO 1st"),
+       col = c("dodgerblue", "red"),
+       pch = c(1,23), cex = 1, lwd = 5, lty=0)
+
+
+```
+
+```{r table_1_CFR, echo = FALSE}
+library(DT)
+Today <- length(FR.ours$gross)
+CFR.Gross.table <- data.frame(Confirmed = c(sum(as.numeric(N[Today,])),
+                                            as.numeric(N[Today,])),
+                              WHO1 = c(round(as.numeric(FR.WHO1$gross[Today])*100,2),
+                                       round(as.numeric(FR.WHO1$group[Today,])*100,2)),
+                              CFR = c(round(as.numeric(FR.ours$gross[Today]) * 100, 2),
+                                      round(as.numeric(FR.ours$group[Today,]) * 100, 2)),
+                              SE = c(round(sqrt(as.numeric(FR.ours$gross.variance[Today])) * 100, 2),
+                                     round(sqrt(as.numeric(FR.ours$group.variance[Today,])) * 100, 2)),
+                              Lower = c(round(as.numeric(FR.ours$gross.lower[Today]) * 100, 2),
+                                      round(as.numeric(FR.ours$group.lower[Today,]) * 100, 2)),
+                              Upper = c(round(as.numeric(FR.ours$gross.upper[Today]) * 100, 2),
+                                      round(as.numeric(FR.ours$group.upper[Today,]) * 100, 2)))
+colnames(CFR.Gross.table) <- c("Confirmed",
+                               "Raw CFR (%)",
+                               "Fatality Rate Estimate (%)", 
+                               "SE (%)", 
+                               "LB (%)", 
+                               "UB (%)")
+rownames(CFR.Gross.table) <- c("--Global Gross--", colnames(FR.ours$group))
+order.table <- order(N[nrow(N),], decreasing = T)
+datatable(CFR.Gross.table[c(1, order.table+1),], options = list(pageLength = 10))
+```
+
+##### *Data source*
+  * ###### *Daily updated global data can be downloaded from the below link:*
+    ###### https://github.com/CSSEGISandData/COVID-19
+
