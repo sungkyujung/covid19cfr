@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>COVID-19 Case Fatality Rate: Global</title>
+
+<script src="site_libs/jquery-1.12.4/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<script src="site_libs/htmlwidgets-1.5.1/htmlwidgets.js"></script>
+<link href="site_libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet" />
+<script src="site_libs/datatables-binding-0.12/datatables.js"></script>
+<link href="site_libs/dt-core-1.10.20/css/jquery.dataTables.min.css" rel="stylesheet" />
+<link href="site_libs/dt-core-1.10.20/css/jquery.dataTables.extra.css" rel="stylesheet" />
+<script src="site_libs/dt-core-1.10.20/js/jquery.dataTables.min.js"></script>
+<link href="site_libs/crosstalk-1.0.0/css/crosstalk.css" rel="stylesheet" />
+<script src="site_libs/crosstalk-1.0.0/js/crosstalk.min.js"></script>
+<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h2 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h3 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h4 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h5 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h6 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html"></a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="COVID19_page_1_CFR_in_Korea_test.html">
+    <span class="fa fa-flag  fa-1x"></span>
+     
+    Korea
+  </a>
+</li>
+<li>
+  <a href="COVID19_page_2_CFR_in_US.html">
+    <span class="fa fa-flag-checkered fa-1x"></span>
+     
+    US
+  </a>
+</li>
+<li>
+  <a href="COVID19_page_3_CFR_Global_test.html">
+    <span class="fa fa-globe fa-1x"></span>
+     
+    Global
+  </a>
+</li>
+<li>
+  <a href="COVID19_page_4_CFR_Methods_test.html">
+    <span class="fa fa-pencil-square fa-1x"></span>
+     
+    Methods
+  </a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">COVID-19 Case Fatality Rate: Global</h1>
+<h4 class="date">4/1/2020</h4>
+
+</div>
+
+
+<div id="trend-of-daily-gross-case-fatality-rate" class="section level2">
+<h2>Trend of Daily Gross Case Fatality Rate</h2>
+<p><img src="COVID19_page_3_CFR_Global_test_files/figure-html/figure_1_CFR-1.png" width="1152" /></p>
+</div>
+<div id="latest-country-wise-case-fatality-rates-top-10-countries-in-no.confirmed-patients-as-of-412020" class="section level2">
+<h2>Latest Country-wise Case Fatality Rates (TOP 10 countries in No. confirmed patients) as of 4/1/2020</h2>
+<p><img src="COVID19_page_3_CFR_Global_test_files/figure-html/figure_2_Country_ci-1.png" width="1152" /></p>
+<div id="htmlwidget-e30b931cc9d897c06c55" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-e30b931cc9d897c06c55">{"x":{"filter":"none","data":[["--Global Gross--","US","Italy","Spain","China","Germany","France","Iran","United Kingdom","Switzerland","Turkey","Belgium","Netherlands","Austria","Korea, South","Canada","Portugal","Brazil","Israel","Sweden","Norway","Australia","Czechia","Ireland","Denmark","Chile","Malaysia","Russia","Ecuador","Poland","Romania","Luxembourg","Philippines","Japan","Pakistan","India","Thailand","Saudi Arabia","Indonesia","Finland","Greece","South Africa","Peru","Dominican Republic","Iceland","Mexico","Panama","Colombia","Serbia","Argentina","Singapore","Croatia","Algeria","Slovenia","Qatar","United Arab Emirates","Ukraine","Egypt","Estonia","Iraq","New Zealand","Morocco","Lithuania","Armenia","Bahrain","Hungary","Lebanon","Bosnia and Herzegovina","Latvia","Moldova","Tunisia","Bulgaria","Slovakia","Andorra","Kazakhstan","Costa Rica","Azerbaijan","North Macedonia","Uruguay","Taiwan*","Cyprus","Kuwait","Burkina Faso","Jordan","Albania","Afghanistan","San Marino","Cameroon","Vietnam","Cuba","Oman","Ghana","Cote d'Ivoire","Senegal","Malta","Uzbekistan","Nigeria","Honduras","Belarus","Mauritius","Sri Lanka","Venezuela","Brunei","Kosovo","Montenegro","Georgia","Bolivia","Kyrgyzstan","Cambodia","Congo (Kinshasa)","Trinidad and Tobago","Rwanda","Kenya","Niger","Paraguay","Liechtenstein","Madagascar","Monaco","Bangladesh","Jamaica","Uganda","Guatemala","Togo","Zambia","Barbados","Djibouti","El Salvador","Guinea","Ethiopia","Bahamas","Tanzania","Congo (Brazzaville)","Guyana","Maldives","Gabon","Haiti","Equatorial Guinea","Eritrea","Mongolia","Namibia","Benin","Saint Lucia","Dominica","Libya","Mozambique","Seychelles","Suriname","Syria","Eswatini","Grenada","Angola","Zimbabwe","Antigua and Barbuda","Chad","Sudan","Cabo Verde","Holy See","Liberia","Mauritania","Fiji","Nepal","Nicaragua","Somalia","Bhutan","Gambia","Central African Republic","Papua New Guinea","Saint Vincent and the Grenadines","Timor-Leste"],[931666,213372,110574,104118,82361,77872,57749,47593,29865,17768,15679,13964,13696,10711,9887,9560,8251,6836,6092,4947,4863,4862,3508,3447,3290,3031,2908,2777,2748,2554,2460,2319,2311,2178,2118,1998,1771,1720,1677,1446,1415,1380,1323,1284,1220,1215,1181,1065,1060,1054,1000,963,847,841,835,814,794,779,779,728,708,654,581,571,569,525,479,459,446,423,423,422,400,390,380,375,359,354,338,329,320,317,282,278,259,237,236,233,218,212,210,195,190,190,188,181,174,172,163,161,146,143,131,125,123,117,115,111,109,109,90,82,81,74,69,68,57,55,54,44,44,39,36,36,34,33,32,30,29,21,20,19,19,19,18,16,15,15,14,14,13,13,12,10,10,10,10,10,9,9,8,8,7,7,7,6,6,6,6,5,5,5,5,4,4,3,1,1,1],[5.02,2.23,11.9,9.02,4.03,1.18,7,6.38,7.89,2.75,1.77,5.93,8.58,1.36,1.67,1.14,2.27,3.51,0.43,4.83,0.9,0.41,1.11,2.47,3.16,0.53,1.55,0.86,3.38,1.68,3.74,1.25,4.15,2.62,1.27,2.9,0.68,0.93,9.36,1.18,3.53,0.36,2.87,4.44,0.16,2.39,2.54,1.6,2.64,2.66,0.3,0.62,6.85,1.78,0.24,0.98,2.52,6.68,0.64,7.14,0.14,5.96,1.38,0.7,0.7,3.81,2.92,2.83,0,1.18,2.84,2.37,0.25,3.59,0.79,0.53,1.39,3.11,0.59,1.52,2.81,0,5.67,1.8,5.79,1.69,11.02,2.58,0,2.83,0.48,2.56,0.53,0.53,0,1.1,1.15,5.81,1.23,3.73,2.05,2.1,0.76,0.8,1.63,0,6.09,0,0,8.26,5.56,0,1.23,6.76,4.35,0,0,1.82,11.11,6.82,0,2.56,5.56,0,0,0,3.12,0,0,4.76,5,0,10.53,0,5.56,0,0,0,0,0,0,0,0,0,0,0,0,20,0,0,25,12.5,0,0,28.57,16.67,0,0,16.67,0,0,20,0,0,25,0,0,0,0],[8.6,4.32,20.57,15.26,4.16,2.07,12.17,10.28,15.11,4.96,3.46,10.6,16.26,2.52,2.37,2.11,4.47,6.83,0.83,9.33,1.8,0.79,2.19,4.87,5.29,1.01,2.73,1.66,6.58,3.31,6.96,2.44,8.05,4.6,2.48,5.51,1.16,1.71,17.27,2.33,6.81,0.71,4.81,8.65,0.3,4.65,5,3.11,5.21,4.62,0.53,1.19,12.73,3.51,0.46,1.88,4.93,11.37,1.25,11.99,0.27,11.31,2.72,1.36,0.98,7.18,5.5,5.47,0,2.29,5.56,4.57,0.5,6.96,1.52,1.06,2.67,5.97,1.11,2.84,5.3,0,10.1,3.33,9.75,3.31,20.21,4.97,0,5.42,0.87,4.65,1.02,0.93,0,2.12,2.23,11.19,2.04,7.31,3.77,3.55,1.22,1.53,3.23,0,11.75,0,0,15.6,10.74,0,2.41,13.06,8.44,0,0,3.54,15.84,12.86,0,4.27,9.26,0,0,0,6.15,0,0,9.07,9.5,0,19.94,0,10.8,0,0,0,0,0,0,0,0,0,0,0,0,36,0,0,40.62,23.44,0,0,40.82,30.56,0,0,25,0,0,36,0,0,31.25,0,0,0,0],[0.04,0.06,0.16,0.14,0.07,0.07,0.18,0.18,0.29,0.22,0.2,0.35,0.43,0.21,0.18,0.2,0.32,0.43,0.16,0.57,0.27,0.17,0.35,0.51,0.5,0.25,0.4,0.34,0.66,0.5,0.7,0.45,0.79,0.59,0.47,0.7,0.33,0.42,1.25,0.56,0.93,0.32,0.76,1.09,0.21,0.84,0.89,0.74,0.96,0.85,0.3,0.48,1.56,0.89,0.32,0.66,1.07,1.48,0.56,1.56,0.27,1.7,0.95,0.67,0.49,1.55,1.43,1.47,0,1.01,1.56,1.41,0.5,1.79,0.87,0.74,1.17,1.74,0.78,1.25,1.72,0,2.39,1.46,2.38,1.62,3.53,1.97,0,2.15,0.87,2.03,1.02,0.92,0,1.48,1.55,3.32,1.42,2.87,2.13,2.01,1.21,1.51,2.23,0,4.15,0,0,4.75,4.51,0,2.36,5.41,4.63,0,0,3.44,5.89,6.86,0,4.14,6.17,0,0,0,5.87,0,0,8.46,8.83,0,12.33,0,9.94,0,0,0,0,0,0,0,0,0,0,0,0,19.6,0,0,21.26,19.45,0,0,21.45,23.85,0,0,20.68,0,0,26.78,0,0,25.02,0,0,0,0],[8.53,4.2,20.25,14.97,4.02,1.93,11.82,9.93,14.55,4.53,3.06,9.92,15.41,2.12,2.01,1.72,3.84,6,0.52,8.2,1.27,0.44,1.51,3.86,4.3,0.52,1.94,1,5.29,2.34,5.59,1.56,6.5,3.43,1.55,4.13,0.51,0.88,14.82,1.24,4.99,0.09,3.32,6.51,0,3,3.25,1.65,3.33,2.95,0,0.25,9.68,1.77,0,0.59,2.83,8.47,0.16,8.94,0,7.97,0.86,0.04,0.03,4.15,2.7,2.58,0,0.31,2.51,1.81,0,3.45,0,0,0.36,2.55,0,0.39,1.94,0,5.42,0.47,5.08,0.13,13.3,1.1,0,1.21,0,0.68,0,0,0,0,0,4.67,0,1.7,0,0,0,0,0,0,3.61,0,0,6.29,1.89,0,0,2.46,0,0,0,0,4.3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],[8.67,4.44,20.88,15.54,4.29,2.2,12.52,10.62,15.68,5.39,3.87,11.28,17.11,2.93,2.73,2.5,5.1,7.67,1.15,10.45,2.33,1.13,2.87,5.88,6.28,1.51,3.51,2.32,7.88,4.28,8.33,3.32,9.59,5.76,3.4,6.88,1.81,2.54,19.72,3.42,8.63,1.33,6.3,10.8,0.71,6.3,6.74,4.56,7.09,6.29,1.12,2.14,15.79,5.26,1.09,3.17,7.04,14.27,2.34,15.04,0.79,14.64,4.57,2.68,1.94,10.21,8.29,8.35,0,4.26,8.61,7.33,1.47,10.47,3.22,2.51,4.97,9.38,2.63,5.28,8.66,0,14.78,6.2,14.42,6.5,27.13,8.84,0,9.63,2.57,8.63,3.02,2.73,0,5.03,5.27,17.7,4.83,12.93,7.94,7.48,3.58,4.49,7.61,0,19.89,0,0,24.92,19.59,0,7.04,23.66,17.52,0,0,10.29,27.39,26.3,0,12.39,21.35,0,0,0,17.66,0,0,25.65,26.81,0,44.1,0,30.28,0,0,0,0,0,0,0,0,0,0,0,0,74.41,0,0,82.3,61.56,0,0,82.87,77.31,0,0,65.53,0,0,88.49,0,0,80.3,0,0,0,0]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Confirmed<\/th>\n      <th>Raw CFR (%)<\/th>\n      <th>Fatality Rate Estimate (%)<\/th>\n      <th>SE (%)<\/th>\n      <th>LB (%)<\/th>\n      <th>UB (%)<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":10,"columnDefs":[{"className":"dt-right","targets":[1,2,3,4,5,6]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+<div id="data-source" class="section level5">
+<h5><em>Data source</em></h5>
+<ul>
+<li><h6 id="daily-updated-global-data-can-be-downloaded-from-the-below-link"><em>Daily updated global data can be downloaded from the below link:</em></h6>
+<h6 id="httpsgithub.comcssegisanddatacovid-19"><a href="https://github.com/CSSEGISandData/COVID-19" class="uri">https://github.com/CSSEGISandData/COVID-19</a></h6></li>
+</ul>
+</div>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
