@@ -1,8 +1,0 @@
----
-title: "Software"
-output: html_document
----
-
-Under construction. [Visit my old software page](oldSoftwarePage.html)
-
-I'm slowing moving software to Github. Check out my Github page (upper right corner) later.
