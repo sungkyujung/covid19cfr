@@ -6,7 +6,7 @@ navbar:
       href: COVID19_page_1_CFR_in_Korea.html
     - text: "US"
       icon: fa-flag-checkered fa-1x
-      href: COVID19_page_2_CFR_in_US.h  tml
+      href: COVID19_page_2_CFR_in_US.html
     - text: "China"
       icon: fa-star fa-1x
       href: COVID19_page_3_CFR_in_China.html
