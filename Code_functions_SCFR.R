@@ -1,6 +1,7 @@
 #------------------------------------------------------------------------------------
 # Functions for calculation of stratification-based case fatality rate
-# Byungwon Kim (Mar 25, 2020)
+# Byungwon Kim 
+# Last update: July 28, 2020
 #------------------------------------------------------------------------------------
 
 ## 1. Data manipulation
@@ -18,7 +19,8 @@ SCFR_data <- function(raw_data, time.var, group.var){
   Time.index <- sort(unique(raw_data[,time.var]))
   Group.index <- sort(unique(raw_data[,group.var]))
   Num.count.var <- ncol(raw_data) - 2           # number of variables except the time and group variables
-  data.out.array <- array(0, dim = c(Num.count.var, length(Time.index), length(Group.index)))
+  data.out.array <- array(0, 
+                          dim = c(Num.count.var, length(Time.index), length(Group.index)))
   for (j in 1:length(Time.index)){
     temp <- data.frame(raw_data[raw_data[,time.var] == Time.index[j], colnames(raw_data) != time.var])
     for (k in 1:length(Group.index)){
@@ -28,7 +30,6 @@ SCFR_data <- function(raw_data, time.var, group.var){
       }
     }
   }
-  
   data.out <- list()
   for (i in 1:Num.count.var){
     data.out[[i]] <- data.frame(data.out.array[i,,])
@@ -37,7 +38,6 @@ SCFR_data <- function(raw_data, time.var, group.var){
   }
   return(data.out)
 }
-
 
 ## 1-(1). Partial grouping
 
@@ -94,11 +94,11 @@ SCFR_Cured <- function(N, cured_count, Matrix = TRUE){
   if (Matrix){
     Total <- apply(N, 1, sum)
     Prop_group <- N / matrix(rep(Total, ncol(N)), ncol = ncol(N), byrow = FALSE)
-    C <- round(Prop_group * matrix(rep(cured_count, ncol(Prop_group)), ncol = ncol(Prop_group), byrow = FALSE), 0)
+    C <- floor(Prop_group * matrix(rep(cured_count, ncol(Prop_group)), ncol = ncol(Prop_group), byrow = FALSE))
   }else{
     Total <- sum(N)
     Prop_group <- N / Total
-    C <- round(Prop_group * cured_count, 0)
+    C <- floor(Prop_group * cured_count)
   }
 }
 
@@ -127,20 +127,18 @@ SCFR_estimation <- function(D, U, C, N, model.option = 1){
   #               CFR[["group.variance"]] - estimated variances of group-wise CFRs
   #               CFR[["group.lower"]] - lower bounds of 95% confidence band for group-wise CFRs
   #               CFR[["group.upper"]] - upper bounds of 95% confidence band for group-wise CFRs
+  
   if (model.option == 1){
     CFR <- list(info = "stratification-based CFR",
                 gross = matrix(0, nrow = nrow(D), ncol = 1),
                 group = matrix(0, nrow = nrow(D), ncol = ncol(D)),
-                gross_new = matrix(0, nrow = nrow(D), ncol = 1),
-                group_new = matrix(0, nrow = nrow(D), ncol = ncol(D)),
                 gross.variance = matrix(0, nrow = nrow(D), ncol = 1),
                 gross.lower = matrix(0, nrow = nrow(D), ncol = 1),
                 gross.upper = matrix(0, nrow = nrow(D), ncol = 1),
                 group.variance = matrix(0, nrow = nrow(D), ncol = ncol(D)),
                 group.lower = matrix(0, nrow = nrow(D), ncol = ncol(D)),
                 group.upper = matrix(0, nrow = nrow(D), ncol = ncol(D)))
-    CFR[["group"]] <- (D + U * D / N) / N
-    CFR[["group_new"]] <- (D + U * D / (C+D)) / N
+    CFR[["group"]] <- (D + U / N * D) / N
     p.d <- D / N
     p.u <- U / N
     eta <- p.d * (1 - p.d) + p.d * p.u * (2 - 3 * p.d + p.u - 4 * p.d * p.u) * (N - 1) / N
@@ -151,17 +149,19 @@ SCFR_estimation <- function(D, U, C, N, model.option = 1){
       CFR$group.variance[i, is.na(CFR$group.variance[i,])] <- 0
     }
     CFR[["gross"]] <- (apply(CFR[["group"]] * N, 1, sum)) / apply(N, 1, sum)
-    CFR[["gross_new"]] <- (apply(CFR[["group_new"]] * N, 1, sum)) / apply(N, 1, sum)
     CFR[["gross.variance"]] <- apply(CFR[["group.variance"]] * N^2, 1, sum) / (apply(N, 1, sum)^2)
     CFR[["gross.lower"]] <- CFR[["gross"]] - 1.96 * sqrt(CFR[["gross.variance"]])
+    CFR$gross.lower <- ifelse(CFR$gross.lower < 0, 0, CFR$gross.lower)
     CFR[["gross.upper"]] <- CFR[["gross"]] + 1.96 * sqrt(CFR[["gross.variance"]])
-    CFR[["group.lower"]] <- CFR[["group"]] - 1.96 * sqrt(CFR[["group.variance"]])
+    temp <- CFR[["group"]] - 1.96 * sqrt(CFR[["group.variance"]])
+    for (j in 1:ncol(temp)){
+      temp[,j] <- ifelse(temp[,j] < 0, 0, temp[,j])
+    }
+    CFR[["group.lower"]] <- temp
     CFR[["group.upper"]] <- CFR[["group"]] + 1.96 * sqrt(CFR[["group.variance"]])
   }else if (model.option == 2){
     CFR <- list(info = "WHO: D / N",
-                gross = apply(D, 1, sum) / apply(N, 1, sum),
-                group = matrix(0, nrow = nrow(D), ncol = ncol(D)))
-    CFR[["group"]] = D/N
+                gross = apply(D, 1, sum) / apply(N, 1, sum))
   }else if (model.option == 3){
     CFR <- list(info = "WHO: D / (C + D)",
                 gross = apply(D, 1, sum) / (apply(C, 1, sum) + apply(D, 1, sum)))
@@ -205,6 +205,7 @@ SCFR_prediction <- function(D, U, C, N, option = 1){
   
   if (option == 1){
     q.hat <- D / N
+    q.hat[is.na(q.hat)] <- 0
   }else if (option == 2){
     q.hat <- D / (C + D)
     q.hat[is.na(q.hat)] <- 0
@@ -218,22 +219,30 @@ SCFR_prediction <- function(D, U, C, N, option = 1){
                    group.lower = matrix(0, nrow = nrow(D), ncol = ncol(D)),
                    group.upper = matrix(0, nrow = nrow(D), ncol = ncol(D)))
   CFR.pred[["group"]] <- (D + U * q.hat) / N
+  CFR.pred[["group.variance"]] <- U * q.hat * (1 - q.hat) / N^2
+  for (i in 1:nrow(D)){
+    CFR.pred$group[i, is.na(CFR.pred$group[i,])] <- 0
+    CFR.pred$group.variance[i, is.na(CFR.pred$group.variance[i,])] <- 0
+  }
   CFR.pred[["gross"]] <- (apply(D, 1, sum) + apply((U * q.hat), 1, sum)) / apply(N, 1, sum)
-
-  CFR.pred[["group.variance"]] <- U * q.hat * (1 - q.hat) / N
-  CFR.pred[["gross.variance"]] <- apply(CFR.pred[["group.variance"]] * N, 1, sum) / apply(N, 1, sum)
+  CFR.pred[["gross.variance"]] <- apply(CFR.pred[["group.variance"]] * N^2, 1, sum) / apply(N, 1, sum)^2
   CFR.pred[["gross.lower"]] <- CFR.pred[["gross"]] - 1.96 * sqrt(CFR.pred[["gross.variance"]])
+  CFR.pred$gross.lower <- ifelse(CFR.pred$gross.lower < 0, 0, CFR.pred$gross.lower)
   CFR.pred[["gross.upper"]] <- CFR.pred[["gross"]] + 1.96 * sqrt(CFR.pred[["gross.variance"]])
-  CFR.pred[["group.lower"]] <- CFR.pred[["group"]] - 1.96 * sqrt(CFR.pred[["group.variance"]])
+  temp <- CFR.pred[["group"]] - 1.96 * sqrt(CFR.pred[["group.variance"]])
+  for (j in 1:ncol(temp)){
+    temp[,j] <- ifelse(temp[,j] < 0, 0, temp[,j])
+  }
+  CFR.pred[["group.lower"]] <- temp
   CFR.pred[["group.upper"]] <- CFR.pred[["group"]] + 1.96 * sqrt(CFR.pred[["group.variance"]])
   
   return(CFR.pred)
 }
 
 
-t_col <- function(color, percent = 50, name = NULL) {
+t_col <- function(color, alpha = 0.5) {
   #      color = color name
-  #    percent = % transparency
+  #      alpha = transparency [0,1]
   #       name = an optional name for the color
   
   ## Get RGB values for named color
@@ -242,7 +251,7 @@ t_col <- function(color, percent = 50, name = NULL) {
   ## Make new color using input color as base and alpha set by transparency
   t.col <- rgb(rgb.val[1], rgb.val[2], rgb.val[3],
                max = 255,
-               alpha = (100 - percent) * 255 / 100)
+               alpha = 255 * alpha)
   
   ## Save the color
   invisible(t.col)

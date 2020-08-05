@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>COVID-19 Case Fatality Rate: Global</title>
+
+<script src="site_libs/jquery-1.12.4/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<script src="site_libs/htmlwidgets-1.5.1/htmlwidgets.js"></script>
+<link href="site_libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet" />
+<script src="site_libs/datatables-binding-0.11/datatables.js"></script>
+<link href="site_libs/dt-core-1.10.19/css/jquery.dataTables.min.css" rel="stylesheet" />
+<link href="site_libs/dt-core-1.10.19/css/jquery.dataTables.extra.css" rel="stylesheet" />
+<script src="site_libs/dt-core-1.10.19/js/jquery.dataTables.min.js"></script>
+<link href="site_libs/crosstalk-1.0.0/css/crosstalk.css" rel="stylesheet" />
+<script src="site_libs/crosstalk-1.0.0/js/crosstalk.min.js"></script>
+<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h2 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h3 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h4 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h5 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h6 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html"></a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="COVID19_page_1_CFR_in_Korea_test.html">
+    <span class="fa fa-flag  fa-1x"></span>
+     
+    Korea
+  </a>
+</li>
+<li>
+  <a href="COVID19_page_2_CFR_in_US.html">
+    <span class="fa fa-flag-checkered fa-1x"></span>
+     
+    US
+  </a>
+</li>
+<li>
+  <a href="COVID19_page_5_CFR_in_China.html">
+    <span class="fa fa-star fa-1x"></span>
+     
+    China
+  </a>
+</li>
+<li>
+  <a href="COVID19_page_3_CFR_Global_test.html">
+    <span class="fa fa-globe fa-1x"></span>
+     
+    Global
+  </a>
+</li>
+<li>
+  <a href="COVID19_page_4_CFR_Methods_test.html">
+    <span class="fa fa-pencil-square fa-1x"></span>
+     
+    Methods
+  </a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">COVID-19 Case Fatality Rate: Global</h1>
+<h4 class="date">7/26/2020</h4>
+
+</div>
+
+
+<div id="trend-of-daily-gross-case-fatality-rate" class="section level2">
+<h2>Trend of Daily Gross Case Fatality Rate</h2>
+<p><img src="COVID19_page_4_CFR_Global_files/figure-html/figure_1_CFR-1.png" width="1152" /></p>
+</div>
+<div id="latest-country-wise-case-fatality-rates-top-10-countries-in-no.confirmed-patients-as-of-7-26-2020" class="section level2">
+<h2>Latest Country-wise Case Fatality Rates (TOP 10 countries in No. confirmed patients) as of 7 / 26 / 2020</h2>
+<p><img src="COVID19_page_4_CFR_Global_files/figure-html/figure_2_Country_ci-1.png" width="1152" /></p>
+<div id="htmlwidget-8a87087d5da093c50df4" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-8a87087d5da093c50df4">{"x":{"filter":"none","data":[["--Global Gross--","US","Brazil","India","Russia","South Africa","Mexico","Peru","Chile","United Kingdom","Iran","Pakistan","Spain","Saudi Arabia","Italy","Colombia","Turkey","Bangladesh","France","Germany","Argentina","Canada","Iraq","Qatar","Indonesia","Egypt","China","Kazakhstan","Ecuador","Philippines","Sweden","Oman","Bolivia","Belarus","Ukraine","Belgium","Kuwait","Dominican Republic","Israel","Panama","United Arab Emirates","Netherlands","Singapore","Portugal","Guatemala","Romania","Poland","Nigeria","Honduras","Bahrain","Armenia","Afghanistan","Switzerland","Ghana","Kyrgyzstan","Japan","Azerbaijan","Algeria","Ireland","Serbia","Moldova","Uzbekistan","Austria","Morocco","Nepal","Kenya","Cameroon","Cote d'Ivoire","Venezuela","Czechia","Costa Rica","Australia","El Salvador","Korea, South","Ethiopia","Denmark","Sudan","Bulgaria","North Macedonia","Bosnia and Herzegovina","Senegal","Madagascar","Norway","Malaysia","Congo (Kinshasa)","Finland","Haiti","Guinea","Gabon","Kosovo","Luxembourg","Mauritania","Djibouti","Croatia","Albania","Central African Republic","Zambia","Paraguay","Hungary","Greece","Lebanon","Nicaragua","Maldives","Thailand","Somalia","Equatorial Guinea","Congo (Brazzaville)","Montenegro","Sri Lanka","Libya","Zimbabwe","Cuba","Cabo Verde","Eswatini","Slovakia","Slovenia","Estonia","Lithuania","Iceland","Rwanda","Namibia","Benin","Mozambique","New Zealand","Tunisia","Suriname","Latvia","Uruguay","Jordan","Liberia","Niger","Georgia","Uganda","Burkina Faso","Cyprus","Angola","Chad","Andorra","Togo","Jamaica","Malta","San Marino","Syria","Tanzania","Taiwan*","Vietnam","Guyana","Mauritius","Bahamas","Mongolia","Gambia","Eritrea","Cambodia","Trinidad and Tobago","Brunei","Monaco","Seychelles","Barbados","Bhutan","Liechtenstein","Antigua and Barbuda","Papua New Guinea","Saint Vincent and the Grenadines","Fiji","Saint Lucia","Timor-Leste","Grenada","Dominica","Holy See"],[16217115,4233923,2419091,1435616,811073,445433,390516,375961,345790,301020,291172,273113,272421,266941,246118,240795,226100,223453,217801,206667,162526,115789,110032,109305,98778,92062,86570,83122,80694,80448,78997,76005,69429,67132,66261,66026,63773,62908,61956,60296,58913,53005,50369,50164,45053,44798,43065,40532,39276,39131,37317,36157,34412,32969,32813,30548,30050,27357,25881,23730,23034,20531,20472,20278,18613,17603,16708,15596,15463,15324,15229,14935,14630,14175,13968,13665,11385,10427,10086,9767,9681,9295,9117,8897,8831,7393,7315,7008,6984,6917,6272,6171,5050,4857,4763,4599,4481,4444,4435,4193,3750,3439,3302,3291,3178,3071,3038,2799,2782,2669,2512,2495,2307,2207,2179,2082,2034,2008,1847,1821,1775,1770,1669,1556,1452,1439,1219,1192,1168,1162,1136,1131,1115,1086,1057,932,915,897,868,842,700,699,650,509,458,420,370,344,342,288,277,263,225,147,141,116,114,110,95,86,82,62,52,27,24,24,23,18,12],[3.99,3.47,3.6,2.28,1.63,1.52,11.19,4.75,2.64,15.23,5.39,2.13,10.44,1.02,14.26,3.43,2.48,1.31,13.86,4.41,1.81,7.72,3.96,0.15,4.84,5,5.37,0.7,6.83,2.4,7.21,0.51,3.72,0.8,2.45,14.87,0.68,1.69,0.76,2.15,0.58,11.62,0.05,3.42,3.85,4.88,3.88,2.12,2.84,0.36,1.89,3.48,5.75,0.51,3.89,3.27,1.39,4.22,6.82,2.25,3.19,0.56,3.48,1.54,0.24,1.59,2.3,0.62,0.92,2.42,0.68,1.08,2.73,2.11,1.6,4.49,6.3,3.26,4.56,2.87,1.97,0.91,2.8,1.39,2.31,4.45,2.15,0.61,0.7,2.44,1.79,2.53,1.15,2.8,2.9,1.28,3.1,0.92,13.44,4.82,1.36,3.14,0.45,1.76,2.93,1.66,1.68,1.54,0.4,2.25,1.35,3.49,0.95,1.45,1.28,5.57,3.39,3.98,0.54,0.27,0.45,1.98,0.66,1.41,3.44,1.6,2.54,2.85,0.94,6.2,6.07,1.41,0.18,4.88,1.8,4.29,8.2,5.8,2.07,1.19,1.29,6.01,5.85,4.13,1.53,0,5.41,2.91,3.22,0,2.17,0,0,5.44,2.13,3.45,0,6.36,0,1.16,3.66,0,0,0,0,0,0,0,0],[5.58,5.76,4.37,3.05,2.03,2.11,12.66,5.89,2.78,28.06,5.8,2.36,14.02,1.19,14.99,5.04,2.6,1.88,20.65,4.57,2.8,8.11,5.06,0.16,6.67,7.92,5.46,0.96,10.25,3.97,13.9,0.64,6.17,0.87,3.48,23.61,0.77,2.58,1.18,3.03,0.65,21.85,0.06,4.33,4.85,6.73,4.66,3.28,5.25,0.39,2.4,4.42,6.03,0.56,5.21,4.12,1.71,5.47,7.01,4.45,4.08,0.82,3.74,1.81,0.31,2.46,2.55,0.83,1.25,2.98,1.19,1.48,3.96,2.25,2.46,4.65,8.94,4.74,6.46,4.31,2.6,1.27,2.83,1.42,3.13,4.54,2.97,0.68,0.95,3.5,2.22,3.18,1.15,3.29,4.08,2.12,4.48,1.26,14.98,7.82,2.09,3.91,0.56,1.83,4.37,2.84,2.91,2.64,0.49,3.98,2.41,3.57,1.3,2.23,1.62,6.34,3.46,4.6,0.55,0.41,0.88,2.76,1.08,1.43,4.06,2.18,2.84,3.35,1.04,8.59,6.29,1.66,0.2,5.39,2.11,7.29,8.47,6.07,2.67,1.35,1.33,6.01,9.55,6.6,1.57,0,7.87,2.92,5.47,0,3.82,0,0,5.85,2.13,3.69,0,6.88,0,1.22,4.51,0,0,0,0,0,0,0,0],[0.01,0.01,0.01,0.02,0.02,0.03,0.06,0.04,0.03,0.11,0.04,0.03,0.08,0.02,0.07,0.05,0.03,0.03,0.11,0.05,0.05,0.08,0.07,0.01,0.09,0.11,0.08,0.04,0.13,0.09,0.17,0.03,0.12,0.04,0.08,0.21,0.04,0.08,0.05,0.08,0.03,0.25,0.01,0.1,0.11,0.14,0.11,0.11,0.15,0.03,0.09,0.12,0.13,0.04,0.14,0.13,0.08,0.16,0.16,0.19,0.15,0.08,0.14,0.1,0.05,0.14,0.13,0.08,0.1,0.15,0.12,0.12,0.19,0.13,0.16,0.18,0.32,0.25,0.29,0.25,0.19,0.14,0.17,0.13,0.22,0.24,0.23,0.1,0.14,0.26,0.21,0.25,0.15,0.28,0.34,0.27,0.37,0.19,0.57,0.53,0.29,0.37,0.14,0.24,0.44,0.39,0.4,0.4,0.15,0.5,0.41,0.38,0.28,0.39,0.3,0.57,0.41,0.5,0.17,0.18,0.31,0.46,0.32,0.3,0.56,0.45,0.5,0.57,0.31,0.97,0.73,0.41,0.14,0.72,0.48,1.11,0.94,0.82,0.62,0.43,0.44,0.9,1.47,1.39,0.59,0,1.69,0.91,1.6,0,1.52,0,0,2.01,1.22,1.81,0,2.51,0,1.21,2.54,0,0,0,0,0,0,0,0],[5.57,5.73,4.34,3.02,2,2.06,12.55,5.8,2.72,27.85,5.72,2.3,13.87,1.15,14.85,4.94,2.54,1.81,20.45,4.48,2.7,7.95,4.92,0.13,6.49,7.7,5.31,0.88,9.99,3.79,13.57,0.58,5.94,0.8,3.31,23.2,0.7,2.43,1.07,2.87,0.58,21.36,0.04,4.13,4.63,6.46,4.44,3.07,4.95,0.32,2.23,4.18,5.78,0.48,4.94,3.87,1.55,5.17,6.7,4.08,3.79,0.67,3.47,1.61,0.22,2.17,2.3,0.66,1.05,2.68,0.97,1.26,3.58,2,2.14,4.29,8.32,4.25,5.89,3.82,2.24,1,2.49,1.17,2.7,4.06,2.51,0.48,0.69,2.98,1.81,2.69,0.86,2.75,3.41,1.58,3.75,0.87,13.88,6.79,1.52,3.18,0.28,1.36,3.5,2.07,2.12,1.86,0.2,2.99,1.61,2.83,0.76,1.47,1.03,5.23,2.66,3.62,0.21,0.05,0.27,1.86,0.45,0.84,2.96,1.3,1.86,2.25,0.43,6.7,4.85,0.85,0,3.98,1.17,5.11,6.63,4.47,1.46,0.52,0.47,4.25,6.67,3.88,0.41,0,4.57,1.14,2.33,0,0.83,0,0,1.92,0,0.14,0,1.97,0,0,0,0,0,0,0,0,0,0,0],[5.6,5.79,4.4,3.09,2.07,2.16,12.77,5.97,2.83,28.28,5.89,2.42,14.17,1.24,15.14,5.15,2.67,1.94,20.86,4.67,2.9,8.27,5.21,0.18,6.85,8.14,5.62,1.03,10.5,4.14,14.24,0.7,6.4,0.94,3.65,24.01,0.85,2.74,1.29,3.19,0.72,22.33,0.08,4.53,5.07,7,4.88,3.5,5.55,0.45,2.58,4.66,6.29,0.65,5.49,4.37,1.87,5.78,7.33,4.82,4.36,0.97,4.01,2.01,0.4,2.74,2.8,0.99,1.45,3.28,1.42,1.71,4.34,2.51,2.78,5.01,9.56,5.23,7.03,4.81,2.96,1.54,3.17,1.67,3.55,5.02,3.42,0.89,1.21,4.02,2.62,3.67,1.45,3.84,4.75,2.65,5.21,1.64,16.09,8.86,2.65,4.63,0.84,2.3,5.23,3.61,3.7,3.42,0.78,4.97,3.21,4.31,1.84,3,2.22,7.46,4.27,5.59,0.88,0.77,1.49,3.66,1.71,2.03,5.16,3.06,3.83,4.46,1.64,10.48,7.72,2.46,0.48,6.8,3.05,9.46,10.3,7.67,3.89,2.19,2.2,7.77,12.43,9.32,2.72,0,11.18,4.71,8.61,0,6.8,0,0,9.78,4.51,7.23,0,11.8,0,3.59,9.48,0,0,0,0,0,0,0,0]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Confirmed<\/th>\n      <th>Naive CFR (%)<\/th>\n      <th>Fatality Rate Estimate (%)<\/th>\n      <th>SE (%)<\/th>\n      <th>LB (%)<\/th>\n      <th>UB (%)<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":10,"columnDefs":[{"className":"dt-right","targets":[1,2,3,4,5,6]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+<div id="data-source" class="section level5">
+<h5><em>Data source</em></h5>
+<ul>
+<li><h6 id="daily-updated-global-data-can-be-downloaded-from-the-below-link"><em>Daily updated global data can be downloaded from the below link:</em></h6>
+<h6 id="httpsgithub.comcssegisanddatacovid-19"><a href="https://github.com/CSSEGISandData/COVID-19" class="uri">https://github.com/CSSEGISandData/COVID-19</a></h6></li>
+</ul>
+</div>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

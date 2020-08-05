@@ -1,32 +1,21 @@
 ---
 title: "COVID-19 Case Fatality Rate: United States"
 #author: "Byungwon Kim"
-date: "6/28/2020"
+date: "7/26/2020"
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 source("Code_functions_SCFR.r")
+setwd("US")  
 C <- read.csv("US_State_Cured.csv", header = TRUE, row.names = 1)
 D <- read.csv("US_State_Dead.csv", header = TRUE, row.names = 1)
 U <- read.csv("US_State_Unknown.csv", header = TRUE, row.names = 1)
 N <- read.csv("US_State_Confirmed.csv", header = TRUE, row.names = 1)
 
-Time_idx = row.names(C)
-C = apply(as.matrix(C),2,as.numeric)
-D = apply(as.matrix(D),2,as.numeric)
-U = apply(as.matrix(U),2,as.numeric)
-N = apply(as.matrix(N),2,as.numeric)
-
-row.names(C) = Time_idx
-row.names(D) = Time_idx
-row.names(U) = Time_idx
-row.names(N) = Time_idx
-
-
 
 FR.ours <- SCFR_estimation(D = D, U = U, C = C, N = N, model.option = 1)
-FR.WHO1 <- SCFR_estimation(D = D, U = U, C = C, N = N, model.option = 2)
+FR.WHO1 <- SCFR_estimation(D = D, U = U, C = C, N = N, model.option = 4)
 
 FR.ours.collapsed <- SCFR_estimation(D = matrix(as.numeric(apply(D,1,sum)), ncol = 1),
                                      U = matrix(as.numeric(apply(U,1,sum)), ncol = 1),
@@ -56,11 +45,11 @@ plot(1:nt, FR.ours$gross,
      type = "n", ylim = y.limit, xlim = c(0, nt + 1),
      ylab = "", xlab = "", xaxt = "n", yaxt = "n", cex.lab = 1.5)
 polygon(c(1:nt, rev(1:nt)), c(FR.ours$gross.lower, rev(FR.ours$gross.upper)), 
-        border = NA, col = t_col("red",percent = 90))
+        border = NA, col = t_col("red", alpha = 0.6))
 
 polygon(c(1:nt, rev(1:nt)), 
         c(FR.ours.collapsed$gross.lower, rev(FR.ours.collapsed$gross.upper)), 
-        border = NA, col = t_col("dodgerblue",percent = 90))
+        border = NA, col = t_col("dodgerblue", alpha = 0.6))
 lines(1:nt, FR.WHO1$gross, type = "l", lty = 2, lwd = 2, col = "black",
       ylab = "", xlab = "")
 lines(1:nt, FR.ours$gross, type = "l", lty = 1, lwd = 2, col = "red",
@@ -83,7 +72,7 @@ axis(side = 2, at = seq(0, y.limit[2]+0.01, by = 0.05),
      las = 1, cex.axis = 1.3)
 ```
 
-## Latest State-wise Case Fatality Rates(TOP 10 states in No. confirmed patients) as of 6/28/2020
+## Latest State-wise Case Fatality Rates(TOP 10 states in No. confirmed patients) as of 7 / 26 / 2020
 ```{r figure_2_State_ci, echo = FALSE, fig.height = 7, fig.width = 12}
 TOP10.index <- order(N[nrow(N),], decreasing = TRUE)[1:10]
 TOP10.CFR <- FR.ours$group[nrow(N), TOP10.index]
@@ -91,19 +80,31 @@ TOP10.CFR.upper <- FR.ours$group.upper[nrow(N), TOP10.index]
 TOP10.CFR.lower <- FR.ours$group.lower[nrow(N), TOP10.index]
 CFR.order <- order(TOP10.CFR, decreasing = TRUE)
 
-par(mar = c(6, 10, 8, 3))
+k <- 0
+while(k < 10){
+  k <- k + 1
+  if (10^k < 2*max(N[nrow(N),]) & 2*max(N[nrow(N),]) < 10^(k+1)) break
+}
+max_x_lim <- 10^(k+1)
 
-max_x_lim = 1000000
-barplot(-unlist(N[nrow(N),TOP10.index][rev(CFR.order)]),horiz = T,
-        axes=F,yaxt="n",space=0,col="gray",xlim=c(-max_x_lim-10000,-0+5000))
-options("scipen" = 100)
-axis(side = 1, at = -seq(0, max_x_lim, by = 200000),
-     labels = seq(0, max_x_lim, by = 200000),
-     las = 1, cex.axis = 1.5,line = 2)
+par(mar = c(4, 10, 5, 3))
+plot(0, 0, type = "n", ylim = c(0, 11.5), xlim = c(-max_x_lim, 0),
+     ylab = "", xlab = "",
+     xaxt = "n", yaxt = "n")
+for (i in 1:10){
+  polygon(c(-N[nrow(N), TOP10.index[CFR.order[i]]], 0, 0, -N[nrow(N), TOP10.index[CFR.order[i]]]),
+          c(11.5 - i, 11.5 - i, 11.5 - (i+1), 11.5 - (i+1)), 
+          border = "grey", col = t_col("grey", alpha = 0.6))
+}
+axis(side = 1, at = -seq(0, max_x_lim, length.out = 5),
+     labels = seq(0, max_x_lim, length.out = 5),
+     las = 1, cex.axis = 1.5, line = 0)
+
+max_cfr_lim <- 2*max(TOP10.CFR)
 
 par(mar = c(4, 10, 5, 3),new = T)
-plot(seq(0, 0.20, length.out = 12),
-     seq(0:11), type = "n", ylim = c(0,11.5), xlim = c(0, 0.25),
+plot(seq(0, 0.25, length.out = 12),
+     seq(0:11), type = "n", ylim = c(0,11.5), xlim = c(0, max_cfr_lim),
      ylab = "", xlab = "",
      xaxt = "n", yaxt = "n")
 points(FR.ours$gross[length(days)], 11, pch = 1, lwd = 10, col = "dodgerblue")
@@ -121,20 +122,20 @@ for(i in 1:10){
         rep(11 - i, 2), 
         type = "b", lty = 1, pch = c(91,93), lwd = 5, col = "seagreen")
 }
-axis(side = 3, at = seq(0, 0.25, by = 0.05),
-     labels = paste0(seq(0, 25, by = 5), "%"),
+axis(side = 3, at = seq(0, max_cfr_lim, by = 0.05),
+     labels = paste0(seq(0, max_cfr_lim*100, by = 5), "%"),
      las = 1, cex.axis = 1.5)
 
 axis(side = 2, at = 11:1,
      labels = c("Gross", names(TOP10.CFR)[CFR.order]),
      las = 2, cex.axis = 1.5)
 
-title(ylab = "State",line = 11,cex.lab = 1.3)
-title(xlab="# of confirmed cases", line = 2.5,cex.lab = 1.7)
-title(main="CFR", line = 3,cex.main=1.7)
-legend(x= 0.215, y = 11.9, legend = c("Our model", "Naive CFR"),
+title(xlab = "# of confirmed cases", line = 2.5, cex.lab = 1.7)
+title(main = "CFR", line = 3, cex.main = 1.7)
+legend("topright", legend = c("Our model", "Naive CFR"),
        col = c("dodgerblue", "red"),
-       pch = c(1,23), cex = 1, lwd = 5, lty=0)
+       pch = c(1,23), cex = 1, lwd = 4, lty = 0)
+
 ```
 
 
