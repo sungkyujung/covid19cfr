@@ -7,11 +7,10 @@ date: "7/26/2020"
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 source("Code_functions_SCFR.r")
-setwd("China")  
-C <- read.csv("China_Cured.csv", header = TRUE, row.names = 1)
-D <- read.csv("China_Dead.csv", header = TRUE, row.names = 1)
-U <- read.csv("China_Unknown.csv", header = TRUE, row.names = 1)
-N <- read.csv("China_Confirmed.csv", header = TRUE, row.names = 1)
+C <- read.csv("China/China_Cured.csv", header = TRUE, row.names = 1)
+D <- read.csv("China/China_Dead.csv", header = TRUE, row.names = 1)
+U <- read.csv("China/China_Unknown.csv", header = TRUE, row.names = 1)
+N <- read.csv("China/China_Confirmed.csv", header = TRUE, row.names = 1)
 
 C[] = lapply(C,as.numeric)
 D[] = lapply(D,as.numeric)

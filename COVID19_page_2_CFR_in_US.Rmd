@@ -7,11 +7,10 @@ date: "7/26/2020"
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 source("Code_functions_SCFR.r")
-setwd("US")  
-C <- read.csv("US_State_Cured.csv", header = TRUE, row.names = 1)
-D <- read.csv("US_State_Dead.csv", header = TRUE, row.names = 1)
-U <- read.csv("US_State_Unknown.csv", header = TRUE, row.names = 1)
-N <- read.csv("US_State_Confirmed.csv", header = TRUE, row.names = 1)
+C <- read.csv("US/US_State_Cured.csv", header = TRUE, row.names = 1)
+D <- read.csv("US/US_State_Dead.csv", header = TRUE, row.names = 1)
+U <- read.csv("US/US_State_Unknown.csv", header = TRUE, row.names = 1)
+N <- read.csv("US/US_State_Confirmed.csv", header = TRUE, row.names = 1)
 
 
 FR.ours <- SCFR_estimation(D = D, U = U, C = C, N = N, model.option = 1)

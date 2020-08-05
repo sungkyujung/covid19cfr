@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>COVID-19 Case Fatality Rate: South Korea</title>
+
+<script src="site_libs/jquery-1.12.4/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<script src="site_libs/htmlwidgets-1.5.1/htmlwidgets.js"></script>
+<link href="site_libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet" />
+<script src="site_libs/datatables-binding-0.11/datatables.js"></script>
+<link href="site_libs/dt-core-1.10.19/css/jquery.dataTables.min.css" rel="stylesheet" />
+<link href="site_libs/dt-core-1.10.19/css/jquery.dataTables.extra.css" rel="stylesheet" />
+<script src="site_libs/dt-core-1.10.19/js/jquery.dataTables.min.js"></script>
+<link href="site_libs/crosstalk-1.0.0/css/crosstalk.css" rel="stylesheet" />
+<script src="site_libs/crosstalk-1.0.0/js/crosstalk.min.js"></script>
+<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h2 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h3 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h4 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h5 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h6 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html"></a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="COVID19_page_1_CFR_in_Korea_test.html">
+    <span class="fa fa-flag  fa-1x"></span>
+     
+    Korea
+  </a>
+</li>
+<li>
+  <a href="COVID19_page_2_CFR_in_US.html">
+    <span class="fa fa-flag-checkered fa-1x"></span>
+     
+    US
+  </a>
+</li>
+<li>
+  <a href="COVID19_page_5_CFR_in_China.html">
+    <span class="fa fa-star fa-1x"></span>
+     
+    China
+  </a>
+</li>
+<li>
+  <a href="COVID19_page_3_CFR_Global_test.html">
+    <span class="fa fa-globe fa-1x"></span>
+     
+    Global
+  </a>
+</li>
+<li>
+  <a href="COVID19_page_4_CFR_Methods_test.html">
+    <span class="fa fa-pencil-square fa-1x"></span>
+     
+    Methods
+  </a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">COVID-19 Case Fatality Rate: South Korea</h1>
+<h4 class="date">7/28/2020</h4>
+
+</div>
+
+
+<div id="trend-of-daily-gross-case-fatality-rate" class="section level2">
+<h2>Trend of Daily Gross Case Fatality Rate</h2>
+<p><img src="Index_files/figure-html/figure_1_CFR-1.png" width="1152" /></p>
+</div>
+<div id="latest-age-group-wise-case-fatality-rates-as-of-7-28-2020" class="section level2">
+<h2>Latest Age Group-wise Case Fatality Rates as of 7 / 28 / 2020</h2>
+<p><img src="Index_files/figure-html/figure_2_agegroup_ci-1.png" width="1152" /></p>
+<div id="htmlwidget-88ed1872c20d18349945" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-88ed1872c20d18349945">{"x":{"filter":"none","data":[["Gross","0s","10s","20s","30s","40s","50s","60s","70s","80s"],[14203,245,781,3607,1774,1907,2511,1840,941,597],[2.11,0,0,0,0.11,0.16,0.64,2.23,9.56,24.79],[2.23,0,0,0,0.12,0.17,0.68,2.37,10.12,25.99],[0.12,0,0,0,0.08,0.1,0.17,0.37,1.01,1.84],[2,0,0,0,0,0,0.35,1.65,8.14,22.39],[2.46,0,0,0,0.29,0.36,1.01,3.09,12.11,29.6]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Confirmed<\/th>\n      <th>Naive CFR (%)<\/th>\n      <th>Fatality Rate Estimate (%)<\/th>\n      <th>SE (%)<\/th>\n      <th>LB (%)<\/th>\n      <th>UB (%)<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":9,"columnDefs":[{"className":"dt-right","targets":[1,2,3,4,5,6]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false,"lengthMenu":[9,10,25,50,100]}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div id="cumulative-number-of-recovered-patients-estimated" class="section level2">
+<h2>Cumulative number of recovered patients (estimated)</h2>
+<div id="htmlwidget-721a7d0ccd4b0dbb69eb" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-721a7d0ccd4b0dbb69eb">{"x":{"filter":"none","data":[["149","148","147","146","145","144","143","142","141","140","139","138","137","136","135","134","133","132","131","130","129","128","127","126","125","124","123","122","121","120","119","118","117","116","115","114","113","112","111","110","109","108","107","106","105","104","103","102","101","100","99","98","97","96","95","94","93","92","91","90","89","88","87","86","85","84","83","82","81","80","79","78","77","76","75","74","73","72","71","70","69","68","67","66","65","64","63","62","61","60","59","58","57","56","55","54","53","52","51","50","49","48","47","46","45","44","43","42","41","40","39","38","37","36","35","34","33","32","31","30","29","28","27","26","25","24","23","22","21","20","19","18","17","16","15","14","13","12","11","10","9","8","7","6","5","4","3","2","1"],["2020-07-28","2020-07-27","2020-07-26","2020-07-25","2020-07-24","2020-07-23","2020-07-22","2020-07-21","2020-07-20","2020-07-19","2020-07-18","2020-07-17","2020-07-16","2020-07-15","2020-07-14","2020-07-13","2020-07-12","2020-07-11","2020-07-10","2020-07-09","2020-07-08","2020-07-07","2020-07-06","2020-07-05","2020-07-04","2020-07-03","2020-07-02","2020-07-01","2020-06-30","2020-06-29","2020-06-28","2020-06-27","2020-06-26","2020-06-25","2020-06-24","2020-06-23","2020-06-22","2020-06-21","2020-06-20","2020-06-19","2020-06-18","2020-06-17","2020-06-16","2020-06-15","2020-06-14","2020-06-13","2020-06-12","2020-06-11","2020-06-10","2020-06-09","2020-06-08","2020-06-07","2020-06-06","2020-06-05","2020-06-04","2020-06-03","2020-06-02","2020-06-01","2020-05-31","2020-05-30","2020-05-29","2020-05-28","2020-05-27","2020-05-26","2020-05-25","2020-05-24","2020-05-23","2020-05-22","2020-05-21","2020-05-20","2020-05-19","2020-05-18","2020-05-17","2020-05-16","2020-05-15","2020-05-14","2020-05-13","2020-05-12","2020-05-11","2020-05-10","2020-05-09","2020-05-08","2020-05-07","2020-05-06","2020-05-05","2020-05-04","2020-05-03","2020-05-02","2020-05-01","2020-04-30","2020-04-29","2020-04-28","2020-04-27","2020-04-26","2020-04-25","2020-04-24","2020-04-23","2020-04-22","2020-04-21","2020-04-20","2020-04-19","2020-04-18","2020-04-17","2020-04-16","2020-04-15","2020-04-14","2020-04-13","2020-04-12","2020-04-11","2020-04-10","2020-04-09","2020-04-08","2020-04-07","2020-04-06","2020-04-05","2020-04-04","2020-04-03","2020-04-02","2020-04-01","2020-03-31","2020-03-30","2020-03-29","2020-03-28","2020-03-27","2020-03-26","2020-03-25","2020-03-24","2020-03-23","2020-03-22","2020-03-21","2020-03-20","2020-03-19","2020-03-18","2020-03-17","2020-03-16","2020-03-15","2020-03-14","2020-03-13","2020-03-12","2020-03-11","2020-03-10","2020-03-09","2020-03-08","2020-03-07","2020-03-06","2020-03-05","2020-03-04","2020-03-03","2020-03-02"],[13004,12900,12886,12861,12811,12753,12694,12639,12566,12553,12514,12457,12392,12344,12279,12199,12174,12139,12060,12015,11965,11910,11844,11827,11805,11754,11680,11610,11532,11424,11359,11313,11166,10970,10927,10904,10878,10864,10852,10830,10795,10770,10754,10725,10713,10687,10665,10651,10607,10584,10558,10548,10526,10502,10495,10464,10442,10418,10401,10395,10359,10337,10291,10269,10222,10209,10188,10159,10130,10061,9933,9899,9884,9846,9817,9759,9691,9667,9627,9606,9564,9481,9414,9326,9279,9212,9178,9120,9068,9054,8917,8848,8760,8712,8630,8497,8407,8272,8209,8109,8037,7934,7824,7753,7611,7530,7443,7363,7238,7113,6970,6770,6691,6594,6457,6322,6015,5823,5563,5403,5223,5029,4808,4525,4139,3725,3502,3161,2905,2607,2230,1943,1536,1396,1133,830,709,504,328,284,244,161,125,113,103,83,36,31,27],[229,225,225,225,225,224,224,224,222,221,218,215,212,206,205,202,200,198,196,194,192,191,189,186,184,181,179,177,176,174,170,169,166,163,162,160,158,158,158,157,157,157,155,154,152,152,152,153,152,151,151,151,150,148,147,147,146,146,145,146,145,144,143,140,139,139,139,139,138,137,135,134,134,134,132,130,129,128,127,127,127,126,124,123,123,122,121,121,120,120,118,117,116,116,114,112,110,109,108,107,106,105,102,100,96,96,95,93,91,89,87,83,83,82,79,77,73,70,66,62,61,59,56,53,48,43,41,36,33,29,25,20,16,14,11,8,7,4,3,2,2,1,1,0,0,0,0,0,0],[730,724,723,725,727,725,721,715,712,711,709,704,702,701,698,693,692,686,684,681,677,674,671,671,670,669,659,656,652,644,642,640,632,621,618,618,619,618,619,618,616,617,617,616,618,618,618,618,615,614,615,614,610,611,611,611,610,609,608,609,605,601,599,598,595,594,592,591,588,581,570,569,568,565,563,558,546,545,540,540,536,531,528,522,520,516,514,511,508,508,500,497,491,487,482,475,469,461,457,451,445,438,433,427,418,411,405,401,393,384,376,364,359,354,343,335,321,310,297,289,282,271,258,244,221,196,184,164,152,137,117,102,80,74,60,44,37,27,17,15,13,8,6,5,5,3,1,1,1],[3374,3350,3348,3352,3354,3346,3327,3320,3301,3296,3290,3275,3264,3254,3242,3224,3216,3213,3194,3183,3171,3162,3144,3144,3146,3136,3123,3110,3098,3070,3055,3047,3007,2956,2951,2955,2955,2953,2957,2959,2954,2953,2952,2949,2950,2944,2942,2942,2936,2936,2936,2938,2944,2948,2952,2948,2950,2948,2951,2947,2939,2937,2931,2928,2916,2914,2911,2906,2896,2876,2836,2825,2822,2810,2798,2780,2755,2743,2729,2713,2693,2663,2647,2621,2608,2589,2579,2564,2548,2542,2503,2483,2457,2444,2420,2382,2358,2320,2302,2274,2252,2222,2188,2166,2126,2102,2077,2052,2014,1981,1940,1884,1861,1832,1792,1750,1664,1606,1535,1492,1446,1388,1323,1247,1140,1023,958,864,792,714,617,541,433,396,322,237,203,146,96,83,73,49,39,35,32,26,12,10,9],[1657,1644,1638,1630,1602,1594,1591,1584,1573,1570,1560,1552,1538,1525,1514,1503,1493,1482,1470,1461,1454,1444,1436,1430,1425,1411,1400,1392,1377,1363,1355,1345,1324,1296,1286,1275,1269,1265,1260,1253,1246,1245,1235,1232,1229,1227,1229,1225,1216,1210,1209,1210,1208,1205,1207,1205,1202,1200,1198,1194,1192,1187,1166,1162,1155,1152,1149,1142,1137,1129,1114,1112,1108,1103,1100,1091,1084,1079,1072,1066,1062,1051,1039,1029,1023,1015,1011,1003,997,995,979,970,960,951,940,925,915,900,893,883,875,864,853,844,830,819,808,800,785,772,756,732,720,708,695,675,639,619,587,568,550,529,503,472,433,389,361,327,300,269,232,203,161,145,118,86,74,52,34,30,26,17,13,12,11,10,4,4,3],[1781,1764,1762,1752,1728,1719,1711,1702,1696,1693,1689,1678,1663,1656,1644,1634,1630,1626,1618,1613,1602,1589,1579,1576,1571,1564,1557,1552,1546,1529,1520,1513,1494,1468,1463,1457,1450,1450,1449,1447,1446,1444,1445,1442,1435,1430,1430,1434,1429,1431,1428,1427,1424,1417,1418,1416,1414,1414,1410,1409,1405,1400,1391,1390,1383,1381,1375,1373,1370,1359,1340,1337,1332,1326,1323,1317,1310,1308,1304,1302,1297,1288,1278,1267,1260,1251,1244,1236,1229,1226,1207,1196,1184,1178,1167,1149,1137,1119,1108,1095,1086,1073,1059,1051,1032,1021,1008,999,984,967,949,920,911,897,879,859,820,792,757,736,712,688,658,618,569,515,484,438,403,361,311,271,216,197,159,117,100,71,46,40,34,22,17,16,15,12,6,5,4],[2334,2315,2316,2304,2301,2290,2278,2270,2260,2258,2254,2244,2235,2230,2217,2203,2204,2203,2187,2179,2169,2160,2149,2145,2145,2139,2130,2113,2093,2075,2065,2061,2039,2006,1997,1992,1986,1982,1981,1977,1968,1965,1963,1957,1956,1950,1946,1937,1928,1926,1918,1917,1912,1909,1908,1900,1896,1890,1880,1878,1869,1866,1860,1857,1848,1843,1840,1830,1826,1816,1797,1790,1789,1783,1780,1773,1765,1764,1758,1760,1756,1743,1733,1717,1708,1695,1690,1681,1672,1671,1646,1634,1618,1611,1597,1573,1557,1532,1522,1502,1488,1469,1450,1438,1412,1399,1384,1370,1348,1325,1299,1265,1251,1236,1215,1195,1141,1109,1062,1034,991,954,912,858,786,709,671,606,557,500,430,375,297,271,219,161,137,97,63,54,46,31,24,22,20,17,8,6,6],[1683,1670,1669,1668,1668,1655,1646,1636,1629,1629,1623,1620,1613,1608,1598,1588,1588,1580,1572,1569,1565,1561,1551,1551,1542,1535,1522,1508,1499,1487,1473,1462,1443,1417,1410,1408,1405,1403,1398,1391,1383,1374,1375,1367,1366,1360,1355,1349,1344,1332,1325,1318,1311,1305,1299,1292,1281,1272,1269,1270,1266,1263,1261,1255,1250,1249,1246,1243,1242,1235,1222,1216,1215,1212,1207,1201,1197,1196,1194,1194,1191,1183,1175,1165,1158,1150,1146,1138,1131,1130,1114,1106,1095,1090,1081,1063,1052,1036,1029,1017,1009,997,984,977,959,950,940,929,915,897,878,854,843,828,812,796,756,733,699,681,658,634,608,565,519,469,442,401,368,330,282,244,192,172,140,102,87,62,40,35,30,20,15,14,13,10,4,4,3],[796,791,789,790,791,787,783,778,768,770,767,765,762,761,759,753,752,752,746,742,741,736,732,733,730,728,723,716,707,700,698,696,686,675,673,673,670,669,666,665,663,658,655,650,649,649,644,644,639,634,630,629,623,617,612,607,604,600,599,601,600,602,603,602,598,599,598,597,596,592,586,584,584,582,581,577,575,574,573,573,572,568,564,559,557,553,553,549,546,546,539,535,531,528,524,517,512,503,500,494,491,485,478,474,465,462,457,453,445,439,431,420,417,414,404,398,376,366,350,339,327,315,304,290,261,236,224,200,184,165,139,121,94,86,70,51,43,31,20,17,14,9,7,6,5,4,1,1,1],[420,417,416,415,415,413,413,410,405,405,404,404,403,403,402,399,399,399,393,393,394,393,393,391,392,391,387,386,384,382,381,380,375,368,367,366,366,366,364,363,362,357,357,358,358,357,349,349,348,350,346,344,344,342,341,338,339,339,341,341,338,337,337,337,338,338,338,338,337,336,333,332,332,331,333,332,330,330,330,331,330,328,326,323,322,321,320,317,317,316,311,310,308,307,305,301,297,292,290,286,285,281,277,276,273,270,269,266,263,259,254,248,246,243,238,237,225,218,210,202,196,191,186,178,162,145,137,125,116,102,77,66,47,41,34,24,21,14,9,8,6,4,3,3,2,1,0,0,0]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Date<\/th>\n      <th>Total<\/th>\n      <th>0s<\/th>\n      <th>10s<\/th>\n      <th>20s<\/th>\n      <th>30s<\/th>\n      <th>40s<\/th>\n      <th>50s<\/th>\n      <th>60s<\/th>\n      <th>70s<\/th>\n      <th>80s<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":5,"columnDefs":[{"className":"dt-right","targets":[2,3,4,5,6,7,8,9,10,11]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false,"lengthMenu":[5,10,25,50,100]}},"evals":[],"jsHooks":[]}</script>
+<div id="data-source" class="section level5">
+<h5><em>Data source</em></h5>
+<ul>
+<li><h6 id="daily-updated-age-grouped-data-can-be-downloaded-from-the-below-link"><em>Daily updated age grouped data can be downloaded from the below link:</em></h6>
+<h6 id="httpswww.kaggle.comkimjihoocoronavirusdatasettimeage.csv"><a href="https://www.kaggle.com/kimjihoo/coronavirusdataset#TimeAge.csv" class="uri">https://www.kaggle.com/kimjihoo/coronavirusdataset#TimeAge.csv</a></h6>
+<ul>
+<li><h6 id="if-not-properly-updated-the-data-can-be-manually-recorded-from-the-daily-report-published-by-kcdc"><em>If not properly updated, the data can be manually recorded from the daily report published by KCDC</em></h6>
+<h6 id="httpncov.mohw.go.krtcmboardlist.dobrdid3brdgubundatagubunncvcontseqcontseqboard_id"><a href="http://ncov.mohw.go.kr/tcmBoardList.do?brdId=3&amp;brdGubun=&amp;dataGubun=&amp;ncvContSeq=&amp;contSeq=&amp;board_id=" class="uri">http://ncov.mohw.go.kr/tcmBoardList.do?brdId=3&amp;brdGubun=&amp;dataGubun=&amp;ncvContSeq=&amp;contSeq=&amp;board_id=</a></h6></li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

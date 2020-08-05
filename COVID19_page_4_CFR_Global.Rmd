@@ -8,11 +8,10 @@ date: "7/26/2020"
 knitr::opts_chunk$set(echo = TRUE)
 source("Code_functions_SCFR.r")
 Country <- read.csv("Raw/Country_name.csv", header = TRUE)
-setwd("Global")  
-C <- read.csv("Global_Cured.csv", header = TRUE, row.names = 1)
-D <- read.csv("Global_Dead.csv", header = TRUE, row.names = 1)
-U <- read.csv("Global_Unknown.csv", header = TRUE, row.names = 1)
-N <- read.csv("Global_Confirmed.csv", header = TRUE, row.names = 1)
+C <- read.csv("Global/Global_Cured.csv", header = TRUE, row.names = 1)
+D <- read.csv("Global/Global_Dead.csv", header = TRUE, row.names = 1)
+U <- read.csv("Global/Global_Unknown.csv", header = TRUE, row.names = 1)
+N <- read.csv("Global/Global_Confirmed.csv", header = TRUE, row.names = 1)
 Country.name <- as.character(Country$Country)
 colnames(C) <- Country.name
 colnames(D) <- Country.name
